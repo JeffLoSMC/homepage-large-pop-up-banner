@@ -9,7 +9,8 @@ import UTIL from './util';
 import ASSIST from './assist';
 import COOKIES from './cookie';
 import MODAL from './modal';
-import general from './components/banner/general';
+import general from './components/banner/general'
+import christmas from './components/banner/christmas';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
