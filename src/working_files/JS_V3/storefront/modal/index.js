@@ -43,6 +43,7 @@ MODAL.$closeBtn = jQuery(`<button type="button" class="close-btn">
 </button>`);
 
 MODAL.$modal = ({ body, background }) => {
+  console.log('BG here', background);
   const _bgConfig = MODAL.bgConfig(background);
   const _id = background.campaign + '_' + _bgConfig.bgID;
   return jQuery(

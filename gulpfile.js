@@ -21,7 +21,7 @@
  del = require('del'),
  sourcemaps = require('gulp-sourcemaps'),
  plumber = require('gulp-plumber'),
- sass = require('gulp-sass'),
+ sass = require('gulp-sass')(require('sass'));
  autoprefixer = require('gulp-autoprefixer'),
  minifyCss = require('gulp-clean-css'),
  babel = require('gulp-babel'),
@@ -33,7 +33,7 @@
  babelify = require('babelify'),
  source = require('vinyl-source-stream'),
  buffer = require('vinyl-buffer'),
- SMS_ID = '40234';
+ SMS_ID = '47830';
 (src_folder = './src/'),
 (src_assets_folder = src_folder + 'working_files/'),
 (dist_folder = './dist/'),

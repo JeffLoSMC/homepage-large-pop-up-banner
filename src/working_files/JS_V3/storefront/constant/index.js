@@ -12,6 +12,7 @@ const CAMPAIGN = {
   CMHK0: 'cmhk0',
   CMHK1a: 'cmhk1a',
   CMHK1b: 'cmhk1b',
+  CHRISTMAS: 'christmas'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

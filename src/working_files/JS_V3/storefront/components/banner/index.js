@@ -12,6 +12,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.DEFAULT) {
     ga('send', 'event', 'Homepage_large_pop_up_samsung_mothersday_special', 'Impression', 'Click_samsung_mothersday_special');
   }
+  if (campaign == CAMPAIGN.CHRISTMAS) {
+    ga('send', 'event', 'Homepage_large_pop_up_christmas', 'Impression', 'Click_christmas');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -43,6 +46,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
   $modal.find('.bannerBody').on('click', () => {
     if (campaign == CAMPAIGN.DEFAULT) {
       ga('send', 'event', 'Homepage_large_pop_up_samsung_mothersday_special', 'Click', 'First_Time_samsung_mothersday_special');
+    }
+    if (campaign == CAMPAIGN.CHRISTMAS) {
+      ga('send', 'event', 'Homepage_large_pop_up_christmas', 'Click', 'First_Time_christmas');
     }
   });
   window.onresize = function () {

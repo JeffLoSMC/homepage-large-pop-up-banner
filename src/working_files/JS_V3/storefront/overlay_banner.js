@@ -66,15 +66,36 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
     return OBSERVER.watch.observe(target, OBSERVER.config);
   };
 
-  OVERLAYBANNER.initBanner = () => {                
-      return;
+  OVERLAYBANNER.initBanner = (target) => {                
       if ((POPUP_BANNER.isNotReachCountOfShow(3) && ASSIST.isDataAndroid()) || ASSIST.isDev) {
-        general({
-          rendered: () => POPUP_BANNER.addCountOfShow(1),
-        });
-		  }    
+        const _target = target || document.getElementById('site-preloader');
+        const _callback = () => {
+          general({
+            rendered: () => POPUP_BANNER.addCountOfShow(1),
+          });
+        };
+        return _callback();
+		  } else {
+        return;
+      }
   };
 
+
+  OVERLAYBANNER.initChristmasBanner = (target) => {                
+    if ((POPUP_BANNER.isNotReachCountOfShow(3) && ASSIST.isDataAndroid()) || ASSIST.isDev) {
+      const _target = target || document.getElementById('site-preloader');
+      const _callback = () => {
+        christmas({
+          rendered: () => POPUP_BANNER.addCountOfShow(1),
+        });
+      };
+      return _callback();
+    } else {
+      return;
+    }
+  };
+
+  
   const initBannerOn = UTIL.getParameterByName('banner');
 
   if (typeof OVERLAYBANNER[initBannerOn] === 'function') {
