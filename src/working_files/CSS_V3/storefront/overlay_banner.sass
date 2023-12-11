@@ -1,0 +1,453 @@
+$red: #ff0000
+$white: #ffffff
+@mixin mobile
+    @media screen and (min-width: 360px)
+        @content
+@mixin ipx
+    @media screen and (min-width: 375px) and (max-width: 480px) and (min-height: 812px)
+        @content
+@mixin desktop
+    @media screen and (min-width: 769px)
+        @content
+@mixin ipad
+    @media screen and (min-width: 768px) and (min-height: 1024px)
+        @content
+.mobile
+    #bannerModal-backdrop.modal-backdrop    
+        z-index: 1040
+#bannerModal-backdrop.modal-backdrop
+    &.show
+        opacity: 0.5
+#bannerModal.modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1050
+    overflow: hidden
+    -webkit-overflow-scrolling: touch
+    outline: 0
+    background: none    
+    max-width: 100%
+    max-height: 100%
+    border-bottom: none
+#bannerModal
+    .desktop
+        display: none
+        @include desktop
+          display: block
+    .mobile
+        @include desktop
+          display: none
+    .close-btn
+        width: 56px
+        height: 56px
+        position: absolute
+        right: 0
+        top: -5px
+        background: none
+        cursor: pointer
+        border: 0
+        &::before
+            position: absolute
+            content: ""
+            width: 100%
+            height: 100%
+            transform-origin: center
+            background: #ffffff
+            border-radius: 40px
+            transform: scale(0, 0)
+            transition: all .3s
+            left: 10%
+        &:focus
+            outline: none
+        .cross-box
+            width: 100%
+            height: 100%
+            position: relative
+            &::before
+                transform: rotate(45deg)
+            &::after
+                transform: rotate(-45deg)
+        &:hover
+            &::before
+                transform: scale(0.7, 0.7)
+    .close-btn .cross-box::before,
+    .close-btn .cross-box::after
+        position: absolute
+        left: 27px
+        top: 20px
+        content: ' '
+        height: 16px
+        width: 2px
+        background-color: #333
+        transition: all .3s
+    .modal-content--popup-banner
+        overflow: hidden
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 1024px
+        height: 80vh
+        max-width: 95%
+        max-height: 98%
+        margin: 0 auto
+        border-radius: 20px
+        transform: translate(-50%, -50%)
+        @include desktop
+            height: 470px
+        .modal-body
+            height: calc(100% - 30px)
+            @include mobile
+            padding: 36px 15px
+        .modal-header
+            position: relative
+            padding: 20px 5px 15px
+            border-bottom: none
+            @include desktop
+                padding: 15px
+        &.bannerBackground
+            max-width: 260px
+            max-height: 450px
+            background-position: 50% 0
+            background-size: 100% auto
+            background-repeat: no-repeat
+            background-color: #B0DBFD
+            @include mobile
+                max-width: 95%
+                max-height: none
+                background-position: 50% 0
+            @include ipx
+                background-size: 110% auto
+            @media screen and (min-width: 550px) and (max-width: 768px)
+                max-width: 490px
+                background-position: center center
+                background-size: auto 100%
+            @include desktop
+                max-width: 100%
+                background-position: right center
+                background-size: 100% auto
+    .homePopup
+        height: 100%
+        &__row
+            height: 100%
+            @include desktop
+                display: flex
+                width: 45%
+                flex-direction: row-reverse
+                align-items: stretch
+                justify-content: center
+                margin: 0 1%
+        &__col
+            position: relative
+            height: 100%
+            @include desktop
+                overflow: visible
+                align-items: center
+                width: 100%
+        &__inner,
+        &__cover
+            position: relative
+        &__text
+            position: relative
+            height: 100%
+            text-align: center
+            padding-top: 1.5vh
+            @include desktop
+                padding-top: 60px
+        &__terms
+            padding: 10px 0
+            line-height: 1.2
+            text-align: left
+            font-size: 12px
+            font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif
+            color: #333333
+            transform: scale(0.9) translateY(-65%)
+            transform-origin: 50% 0
+            @include mobile
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                width: 100%
+                transform: scale(.85) translateY(15%)
+            @include desktop
+                white-space: pre-line
+                font-size: 12px
+                transform: none
+            &--redBg
+              color: #f8cc85
+        img
+            max-width: 90%
+            @include desktop
+                max-width: 100%
+        .kv
+            overflow: hidden
+            position: relative
+            width: 100%
+            height: 100%
+            margin: 8px auto 0
+            padding-bottom: 35vh
+            @include mobile
+                margin: 16px auto 0
+            @include desktop
+                padding-bottom: 90%
+            img
+                position: absolute
+                top: 0
+                left: 50%
+                width: 60vh
+                width: calc(min(60vh, 90%))
+                max-width: none
+                transform: translateX(-50%)
+                @media screen and (min-width: 640px)
+                    width: calc(min(60vh, 65%))
+                @include desktop
+                    width: 110%
+        .title
+            // position: absolute
+            // top: -6vh
+            // left: 0
+            width: 100%
+            margin: 0
+            text-align: center
+            // @media screen and (min-width: 375px)
+                // top: -1vh
+            @include desktop
+                position: static
+                margin: 0 auto 16px
+                max-width: 720 * 0.5px
+            &--desktop
+                display: none
+                @include desktop
+                    display: inline-block
+            &--mobile
+                display: inline-block
+                @include desktop
+                    display: none
+            img
+                width: calc(min(50vh, 100%))
+                max-width: 200px
+                @media screen and (min-width: 375px)
+                  max-width: 260px
+                @include desktop
+                    width: 290px
+                    max-width: 100%
+        .button
+            width: 100%
+            margin: 0 auto 8px
+            @include desktop
+                max-width: 284 * 0.5px
+                margin: 16px auto
+            img
+                max-width: 40%
+                @include desktop
+                    max-width: 100%
+        .txt
+            width: 100%
+            margin: 4px auto
+            @include desktop
+                max-width: 914 * 0.7px
+                margin: 18px auto
+            img
+                width: calc(min(40vh, 100%))
+                @include desktop
+                    width: auto
+                    max-width: 80%
+        &__cta
+            transform: none
+            transform-origin: 50% 0
+        &__promo
+            overflow: visible
+            display: flex
+            flex-wrap: wrap
+            align-items: stretch
+            justify-content: center
+            margin: 2vh auto 8px
+            transform: scale(.9)
+            @include mobile
+                transform: none
+                margin-top: 2vh
+            @include desktop
+                margin: 6px auto
+            @include ipad
+                margin-top: 1vh
+            @media (min-width: 1024px)
+                margin: 6px 0 6px 15%
+        &__labelWrapper
+            background: white
+            -webkit-box-shadow: 0px 0px 4px 1px rgba(198, 180, 146, 0.8)
+            box-shadow: 0px 0px 4px 1px rgba(198, 180, 146, 0.8)
+            border-radius: 20px
+            @media screen and (min-width: 640px)
+                border-radius: 30px
+        &__label
+            display: inline-flex
+            align-items: center
+            padding: 5px
+            border-radius: 20px
+            font-size: 12px
+            @include mobile
+                padding: 10px
+                font-size: 14px
+            @include desktop
+                padding: 15px 20px
+                font-size: 20px
+                border-radius: 30px
+            &--red
+                border-top-right-radius: 0
+                border-bottom-right-radius: 0
+                background-color: $red
+                letter-spacing: 2px
+                span
+                    color: $white
+            &--white
+                border-top-left-radius: 0
+                border-bottom-left-radius: 0
+                background-color: $white
+                letter-spacing: 2px
+                span
+                    color: $red
+            &--plain
+                padding-left: 5px
+                padding-right: 5px
+                padding-top: 0
+                padding-bottom: 0
+                @include desktop
+                    // width: 100%
+                    justify-content: center
+        &__copy-btn
+            text-decoration: underline
+            background: none
+            color: $red
+            font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif
+            font-size: 12px
+            @include mobile
+                font-size: 14px
+            @include desktop
+                display: inline-block
+                width: 58px
+        &__cta-btn
+            margin-top: calc(min(24vh, 160px))
+            margin-top: 120px
+
+            @include ipx
+                margin-top: calc(min(24vh, 160px))
+
+            @include desktop
+                margin-top: 20px
+            img
+                max-width: 143px
+                @include desktop
+                    max-width: 335 * 0.5px
+    #default_BG      
+      .bannerBackground
+        min-width: 768px
+        width: 934px
+        background-position: center center
+        background-color: #fff      
+      .button
+        position: absolute
+        top: 77%
+        bottom: 10%
+        left: auto
+        right: 50%
+        width: 190px
+        // background: rgba(0,0,0,.4)
+      .homePopup__text
+        padding-top: 380px
+      .homePopup__row
+        width: 100%
+      #TERMS
+        left: 32%
+        text-align: center
+      #DEFAULT_TERMS
+        width: 100%      
+    #default_BG_M
+      .homePopup__cta
+        position: absolute
+        right: 26%
+        top: -5%
+      .bannerBackground
+      max-width: 212px
+      max-height: 400px
+      background-size: cover
+      background-color: #A8D8FE
+      @include mobile
+          background-size: auto 100%
+      @include ipx
+          height: 500px
+          background-size: auto 100%
+          background-position: top center
+      #TERMS
+        bottom: 10px
+        @include ipx
+          bottom: 20px
+      .button
+        position: absolute
+        top: 77%
+        bottom: 15%
+        left: 13%
+        right: 50%
+        // background: rgba(0,0,0,.4)
+        @include ipx
+          left: 5%
+    #DEFAULT_TERMS
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      transform: scale(0.9) translateY(40%)
+      text-align: center
+      @include desktop
+        width: 200%
+    #TERMS
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      transform: scale(.8) translateY(15%)
+      @include mobile
+        bottom: 0
+      @include desktop
+        width: 200%
+[lang="en"]
+    #bannerModal .homePopup__text
+      padding-top: 1.5vh
+      @include desktop
+        padding-top: 60px
+    #bannerModal .homePopup__label--red,
+    #bannerModal .homePopup__label--white
+      letter-spacing: 0
+    #bannerModal .homePopup__promo
+      transform: scale(.95)
+    #bannerModal .homePopup .txt
+      @include desktop
+        max-width: 914 * 0.45px
+    #bannerModal .homePopup .txt img
+      max-width: 200px
+      @include mobile
+        max-width: 266px
+      @include desktop
+        max-width: 90%
+    #bannerModal .homePopup .title
+      @include mobile
+        top: 2vh
+    #bannerModal .homePopup .title img
+      max-width: 300 * .6px
+      @include mobile
+        max-width: 250px
+      @include desktop
+        width: 630 * .55px
+        max-width: 100%
+    #bannerModal .homePopup__cta-btn img
+      @include desktop
+        max-width: 286 * .7px
+    #bannerModal
+      #fiveG19030_BG
+        .homePopup__text
+          padding-top: 20px

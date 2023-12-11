@@ -1,0 +1,354 @@
+/* menu start */
+p,
+h1 {
+    color: inherit;
+}
+ul li {
+    list-style-type: disc;
+    list-style-type: inherit;
+}
+header.smt-custom a:focus,
+footer.smt-custom a:focus,
+.drawer-wrapper  a:focus{
+    outline: none;
+    text-decoration: none;
+}
+header.smt-custom .header-wrapper .menu-bar .menu-list .hamburger-btn {
+    box-sizing: content-box;
+}
+body.v4 header.smt-custom{
+    position: fixed;
+}
+#Container_Site header.smt-custom{
+    box-sizing: content-box;
+    z-index: 501;
+}
+
+#topLogoPanel{
+    height: 0;
+}
+body.v4 .st-container.container,
+#Container_Site {
+    margin-top: 113px;
+}
+
+header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .container {
+    padding: 0;
+    position: initial;
+}
+.drawer-wrapper,
+body.drawer-mode .drawer-wrapper {
+    height: 100vh;
+    z-index: 501;
+    text-align: left;
+}
+.drawer-wrapper .middle-bar .item-box .sub-menu .row-items .cat-name:empty {
+    display: none;
+}
+.cartpreview .st-store-controls:hover:before, #Container_Site.added .st-store-controls:before {
+    width: 55px;
+    height: 77px;
+    top: 6px;
+    right: -6px;
+    background: transparent;
+}
+.smt-header .header-wrapper .menu-bar .menu-list .func-btn::before{
+    left: 0;
+}
+#Container_Site.added #cartPopup, #cartPopList{
+    top: 80px;
+    right: 0px;
+    border: solid 1px #ff0000;
+    border-radius: 10px;
+}
+.smt-header .header-wrapper .menu-bar .menu-list .func-btn {
+    z-index: 1001;
+}
+.st-store-controls .st-bag-msg{
+    display:none;
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    background: #c31f11;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0;
+}
+.st-counter {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.st-counter:before,
+.st-counter:after{
+    display: none;
+}
+.st-store-controls {
+    float: left;
+}
+/* corpweb */
+body.v4-tchinese .smt-header .header-wrapper .menu-bar .menu-list ul li a,
+body.v4-tchinese .drawer-wrapper .middle-bar .item-box .top-row a,
+body.v4-tchinese .drawer-wrapper .top-bar ul li a,
+body.v4-tchinese .drawer-wrapper .bottom-bar ul li a ,
+body.v4-tchinese .drawer-wrapper .middle-bar .item-box .sub-menu .row-items ul li a,
+body.v4-tchinese .drawer-wrapper .middle-bar .item-box .banner .content-box,
+body.v4-tchinese footer .middle .right .map-box .map-item .title, 
+body.v4-tchinese footer .middle .right .contact-box .map-item .title,
+body.v4-tchinese footer .middle .left .slogan,
+body.v4-tchinese .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .link-wrapper .col-title,
+body.v4-tchinese .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .banner .content-box .title,
+body.v4-tchinese .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .banner .content-box .tag,
+body.v4-tchinese #wechat-popup-wrapper .container ul.guide li { 
+    font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+}
+
+body.v4-tchinese footer.smt-custom .middle .right .map-box .map-item .tel, 
+body.v4-tchinese footer.smt-custom .middle .right .contact-box .map-item .tel, 
+body.v4-tchinese footer.smt-custom .middle .left .app-box .care-content p,
+body.v4-tchinese footer.smt-custom a  {
+    font-family: 'NotoSansCondBold','Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+}
+body.v4-tchinese footer .middle .right .map-box .map-item ul li a, 
+body.v4-tchinese footer .middle .right .contact-box .map-item ul li a,
+body.v4-tchinese footer .bottom .copyright, 
+body.v4-tchinese footer .bottom ul li a,
+body.v4-tchinese .middle .right .map-box .map-item .desc, 
+body.v4-tchinese .middle .right .contact-box .map-item .desc,
+body.v4-tchinese .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .banner .content-box .desc,
+body.v4-tchinese .serach-popup-box .panel .input-area input  {
+    font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+}
+body.v4-tchinese .simple-dropdown .now-item {
+    font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+}
+body.v4-tchinese #wechat-popup-wrapper .container h3{
+    font-family: 'NotoSansCondBold','Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: normal;
+}
+/* online store */
+html[lang=zh-hk] .smt-header .header-wrapper .menu-bar .menu-list ul li a,
+html[lang=zh-hk] .drawer-wrapper .middle-bar .item-box .top-row a,
+html[lang=zh-hk] .drawer-wrapper .top-bar ul li a,
+html[lang=zh-hk] .drawer-wrapper .bottom-bar ul li a ,
+html[lang=zh-hk] .drawer-wrapper .middle-bar .item-box .sub-menu .row-items ul li a,
+html[lang=zh-hk] .drawer-wrapper .middle-bar .item-box .banner .content-box,
+html[lang=zh-hk] footer .middle .right .map-box .map-item .title, 
+html[lang=zh-hk] footer .middle .right .contact-box .map-item .title,
+html[lang=zh-hk] footer .middle .left .slogan,
+html[lang=zh-hk] .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .link-wrapper .col-title,
+html[lang=zh-hk] .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .banner .content-box .title,
+html[lang=zh-hk] .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .banner .content-box .tag,
+html[lang=zh-hk] #wechat-popup-wrapper .container ul.guide li {
+    font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+}
+
+html[lang=zh-hk] footer.smt-custom .middle .right .map-box .map-item .tel, 
+html[lang=zh-hk] footer.smt-custom .middle .right .contact-box .map-item .tel, 
+html[lang=zh-hk] footer.smt-custom .middle .left .app-box .care-content p,
+html[lang=zh-hk] footer.smt-custom a {
+    font-family: 'NotoSansCondBold','Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 700;
+}
+html[lang=zh-hk] footer .middle .right .map-box .map-item ul li a, 
+html[lang=zh-hk] footer .middle .right .contact-box .map-item ul li a,
+html[lang=zh-hk] footer .bottom .copyright, 
+html[lang=zh-hk] footer .bottom ul li a,
+html[lang=zh-hk] .middle .right .map-box .map-item .desc, 
+html[lang=zh-hk] .middle .right .contact-box .map-item .desc,
+html[lang=zh-hk] .smt-header .header-wrapper .menu-bar .menu-list ul li .sub-menu-wrapper .banner .content-box .desc,
+html[lang=zh-hk] .serach-popup-box .panel .input-area input  {
+    font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 400;
+}
+html[lang=zh-hk] .simple-dropdown .now-item {
+    font-family: 'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+}
+html[lang=zh-hk]  #wechat-popup-wrapper .container h3{
+    font-family: 'NotoSansCondBold','Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: normal;
+}
+/*
+body.mobile #topLogoPanel{
+    display: block;
+}
+body.mobile #mobLogoPanel{
+    display:none;
+}
+*/
+.prognroll-bar{
+    z-index: 502 !important;
+}
+.smt-header .header-wrapper .top-bar .lang-box .now-item:hover{
+    text-decoration: none;
+}
+#wechat-popup-wrapper .container ul.guide li:nth-child(1) {
+    background-image: url(../fonts/icon-wechat-step1.svg);
+}
+#wechat-popup-wrapper .container ul.guide li:nth-child(2) {
+    background-image: url(../fonts/icon-wechat-step2.svg);
+}
+#wechat-popup-wrapper .container ul.guide li:nth-child(3) {
+    background-image: url(../fonts/icon-wechat-step3.svg);
+}
+.serach-popup-box {
+    z-index: 501;
+}
+.drawer-wrapper a:hover,
+.simple-dropdown .dropdown-list-wrapper ul li a:hover {
+    text-decoration: none;
+}
+.serach-popup-box .panel {
+    border-radius: 0;
+    margin: 0;
+}
+/**/
+body .st-toolbar-wrapper.affix {
+    top: 74px;
+}
+/**/
+@media only screen and (max-width: 1150px){
+    /*
+    #topLogoPanel{
+        height: 73px;
+    }
+    */
+    body.v4 .st-container.container,
+    #Container_Site {
+        margin-top: 73px;
+    }
+}
+@media only screen and (max-width: 839px){
+    body.v4 .st-container.container{
+        margin-top: 20px;
+    }
+    body.mobile #Container_Site {
+        margin-top: 0;
+    }
+}
+/* menu end */
+
+/* footer start */
+body.v4 footer.smt-custom {
+    background: #F6F6F6;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+footer.smt-custom .footer-wrapper{
+    height: auto;
+}
+footer.smt-custom .middle{
+    height: auto;
+    text-align: left;
+}
+footer.smt-custom .dropdown-list-wrapper ul{
+    margin-left: 0;
+}
+/* footer end */
+
+body.v4 .carousel .carousel-indicators {
+    z-index: 1;
+}
+
+
+footer.smt-custom .middle .right .map-box .map-item ul li a:hover, 
+footer.smt-custom .middle .right .contact-box .map-item ul li a:hover {
+    color: #333;
+    text-decoration: none;
+}
+footer.smt-custom .middle .right .map-box .map-item .tel, 
+footer.smt-custom .middle .right .contact-box .map-item .tel,
+footer.smt-custom .middle .left .app-box .care-content p {
+    font-family: "titling-gothic-fb-condensed",'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+}
+
+footer.smt-custom span{
+    color: #333;
+}
+footer.smt-custom .map-item a:hover{
+    color: initial;
+    text-decoration: none;
+}
+
+footer.smt-custom .bottom ul li a:hover{
+    text-decoration: none;
+}
+footer.smt-custom a,
+footer.smt-custom a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+/**/
+.serach-popup-box .panel .input-area .btn-container .serach-icon::before,
+.serach-popup-box .panel .close-btn::before {
+    left: 0;
+}
+.serach-popup-box input {
+    background: transparent;
+    border: 0;
+    outline: 0
+}
+
+.serach-popup-box input::-webkit-input-placeholder {
+    color: #333;
+    opacity: 1
+}
+
+.serach-popup-box input:-ms-input-placeholder {
+    color: #333;
+    opacity: 1
+}
+
+.serach-popup-box input::placeholder {
+    color: #333;
+    opacity: 1
+}
+#wechat-popup-wrapper .container h3 {
+    font-family: "titling-gothic-fb-condensed",'Noto Sans','Noto Sans TC',"MHei", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#wechat-popup-wrapper .container h3 strong {
+    color: red;
+    font-weight: normal;
+}
+
+
+/* banner position */
+body.v4 .homepage-container,
+body.v4 .plans-section,
+body.v4 .padding_normal {
+    margin-top: 112px !important;
+}
+@media only screen and (max-width: 1150px){
+    body.v4 .homepage-container,
+    body.v4 .plans-section,
+    body.v4 .padding_normal {
+        margin-top: 73px !important;
+    }
+}
+@media only screen and (max-width: 839px){
+    body.v4 .homepage-container,
+    body.v4 .plans-section,
+    body.v4 .padding_normal {
+        margin-top: 20px !important;
+    }
+}
+/* banner position */

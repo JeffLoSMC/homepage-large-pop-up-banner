@@ -1,0 +1,327 @@
+#popupShopList .modal-dialog , #popupShopTimeslot .modal-dialog {
+height: 98%;
+    max-height: 93%;
+    display: inline-block;
+    margin: 20px auto;
+    width: 50%;
+    left: 25%;
+    /* margin-left: -25%; */
+    overflow: hidden;
+}
+#popupShopList .modal-content, #popupShopTimeslot .modal-content {
+    height: 100%;
+    overflow: hidden;
+	padding-bottom:70px;
+}
+#popupShopList .modal-body, #popupShopTimeslot .modal-body {
+    height: 84%;
+    display: inline-block;
+    max-height: 84%;
+	overflow:hidden;
+	width:100%;
+	padding:0 18px;
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+
+.shop-list ul, .shop-list li {margin-left:0}
+.shop-list  input {
+  display: none;
+}
+.shoplist-cont  .label-tab,
+.shoplist-cont  .nav li > a  {
+  width: 100%;
+  display: inline-block!important;
+  font-weight: 600;
+  text-align: center;
+  background-color: #eee;
+  padding-left:0px;
+  padding-right:0px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  color:#666;
+  border-bottom:solid 3px #ddd!important;
+}
+.shoplist-cont  .nav li > a:hover  {
+	color:#f00;
+}
+.shoplist-cont  .label-tab:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.shoplist-cont .tab-pane {padding:0}
+
+/*Can be un-comment this for display icon no TAB*/
+/*label[for*='1']:before {
+  content: '\f1cb';
+}
+
+label[for*='2']:before {
+  content: '\f17d';
+}
+
+label[for*='3']:before {
+  content: '\f16b';
+}
+
+label[for*='4']:before {
+  content: '\f1a9';
+}*/
+
+.shoplist-cont .nav-tabs {    border-radius: 16px 0 0 0;}
+.shoplist-cont .nav-tabs li > a {display:block!important}
+.shoplist-cont  .label-tab {
+  border-bottom: 3px solid #ccc;
+}
+.shoplist-cont  .label-tab:hover {
+  color: #999;
+  cursor: pointer;
+}
+.shoplist-cont  input:checked + .label-tab,
+.shoplist-cont  .nav-tabs li.active > a, .shoplist-cont  .nav-tabs li.active > a:hover {
+  color: #f00;
+  background-color: transparent;
+  border-bottom: 3px solid #f00!important;
+}
+#popupShopList .modal-body {
+	aborder: solid 1px #d1d1d1;
+    aborder-top: 0 none;
+    aborder-bottom-left-radius: 15px;
+    aborder-bottom-right-radius: 15px;
+	height:92%;
+	max-height:92%;
+}
+.shoplist-cont {    
+	border-radius: 15px;
+    border: solid 1px #d1d1d1;
+    background-color: #fff;
+	overflow:hidden;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .label-tab {
+    font-size: 0;
+  }
+
+  .label-tab:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .label-tab {
+    padding: 15px;
+  }
+}
+
+.shop-list  section {
+  display: none;
+  border-top: 1px solid #ddd;
+}
+#radio-demo input[type="radio"] + label:before  {top:0}
+
+
+.shop-list-table-row  {
+  adisplay: table-row;
+  display:block;
+  margin:0;
+  padding:18px;
+}
+.shop-list-table-row+.shop-list-table-row {border-top:solid 1px #ddd}
+.shop-list-table-cell {
+  padding:20px;
+  display: table-cell;  
+  border:0 none!important;
+  padding:20px 0;
+  font-size:13px;
+}
+.ashop-list-table-cell {padding-bottom:10px;font-size:13px}
+.shop-list-table-row+.shop-list-table-row .shop-list-table-cell {border-top: 1px solid #ddd;}
+.shop-list-height:last-child.shop-list-table-cell {
+  border-bottom: none !important;
+}
+.shop-list-height {
+  height: auto;
+  overflow: hidden;
+  overflow-y:visible;
+  background-color:#fff;margin-right:0;
+}
+.shop-list {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.shop-list-name {
+  display: inline;
+  text-decoration: none;
+  font-size: 15px;
+}
+a.shop-list-name,a.shop-list-name:visited,a.shop-list-name:link {
+  text-decoration: none!important;
+  color: #333!important;
+}
+.shoplist-cont .shop-list-name:hover {
+  color: #f00!important;
+  text-decoration: none;
+}
+.shoplist-cont .shop-list-name:active {
+  color: #333;
+  text-decoration: none;
+}
+.shoplist-cont .shop-list-name:focus {
+  color: #333;
+  text-decoration: none;
+}
+.timeslot-disp .shop-list-name .district, 
+.timeslot-disp .shop-list-name .district {font-weight:bold;font-size:20px}
+/*
+#popupShopList .button-continue {
+  float: right;
+  padding: 8px;
+  width: 120px;
+}*/
+.fa-map-marker {
+  color: #455A64;
+  font-size: 20px;
+}
+
+#shopSelect input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  -o-opacity: 0;
+}
+#shopSelect input[type="radio"] + label {
+  position: relative;
+  font-size: 16px;
+  line-height: 25px;
+}
+#shopSelect input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 18px;
+  width: 18px;
+  background: white;
+  border: 1px solid #999;
+  box-shadow: inset 0px 0px 0px 2px white;
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+  -moz-box-shadow: inset 0px 0px 0px 2px white;
+  -o-box-shadow: inset 0px 0px 0px 2px white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+#shopSelect input[type="radio"]:checked + label:before {
+  background: #f00;
+}
+
+.payment-dialog > ul {
+    list-style:none;
+}
+.payment-dialog > ul > li {
+    list-style:none;
+    display: inline-block;
+    width: 100%;
+}
+.payment-dialog-date > a {
+    width: 100%;
+    height: 3em;
+    padding-left: 1em;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    float: left;
+    line-height: 3em;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #000;
+    list-style:none;
+}
+.payment-dialog-timeslot {
+    width: 100%;
+    height: 300px;
+    margin-top: 2em;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.payment-dialog-timeslot > ul > li {
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 4em;
+    padding: 0em 1em 0em;
+    overflow: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.payment-dialog-timeslot > ul > li > a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration:none;
+  color: #000000;
+}
+
+
+#popupShopList .nav li+li,
+#inlineShopList .nav li+li {
+	border-left:solid 1px #eee;
+}
+#popupShopList {
+	padding:18px!important;
+	min-height:660px;
+}
+#popupShopList header .greeting,
+#inlineShopList header .greeting {
+	padding:0 0 18px 0;
+}
+.shoplist-cont .tab-content {height:100%;}
+#popupShopList .shop-list-height,
+#inlineShopList .shop-list-height {
+	max-height:460px;
+}
+.shoplist-cont .tab-pane {padding:0!important}
+#popupShopList .button-cont,
+#inlineShopList .button-cont {
+	background-color:#fff;
+	border-top:solid 1px #d1d1d1;
+}
+.shoplist-cont .available-cont {line-height:21px;display:block!important;opacity:0;height:auto!important;height:21px;min-height:21px;amargin:0}
+.shoplist-cont .available-cont.collapsing ,
+.shoplist-cont .available-cont.collapse.in {opacity:1}
+.shoplist-cont .available-cont.loaded,
+.shops-list  .available-cont.loaded {border:solid 1px #4caf50}
+.shops-list .available-cont.error,
+.shoplist-cont .available-cont.error {border:solid 1px #f00}
+.shoplist-cont .available-date {font-size:16px;padding-right:0}
+.ashoplist-cont .available-date.success {text-decoration:underline}
+.available-date {font-size: 18px;color: #4caf50;}
+
+.shoplist-cont .shop-list-table-cell label > .row+.row {margin-top:10px}
+.shoplist-cont .available-cont > div+div,
+.shoplist-cont .shop-list-table-cell label > .row > div+div {padding:0 20px 0 0}
+#shopMap {aborder-bottom-right-radius:15px;    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);}
+
+.openhour-cont .week-title {padding-right:0!important}
+	
+.loading-txt {	-webkit-animation: color_change 1s infinite alternate;
+	-moz-animation: color_change 1s infinite alternate;
+	-ms-animation: color_change 1s infinite alternate;
+	-o-animation: color_change 1s infinite alternate;
+	animation: color_change 1s infinite alternate;
+	color:#eee;
+}

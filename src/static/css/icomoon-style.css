@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^=linkicon-], [class^="icon-icon-"], [class^="icon-icon_"], [class*=" icon-icon-"], [class*=" icon-icon_"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a.icon-link {
+    display: block;
+    height: 30px;
+    line-height: 30px
+}
+
+a.icon-link [class*=icon-]:before {
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: #f00;
+    margin: 4px 10px 0;
+}
+
+/* 2021-09-00 */
+.icon-icon_recontract:before {
+    content: "\e905";
+}
+/* 2021-06-11 */
+.icon-thin-tick:before {
+    content: "\e902";
+}
+
+/* 2020-08-24 */
+.icon-icon-apple_corner:before {
+  content: "\e904";
+}
+
+/* 2020-08-05 */
+
+.icon-icon-ipad:before {
+    content: "\e903";
+}
+
+.icon-icon-networking:before {
+    content: "\e901";
+}
+
+/* 2020-05-22 */
+
+.icon-icon-samsung:before {
+    content: "\e900";
+}
+
+/* 2018-01-17 */
+
+.icon-icon-collectibles:before {
+    content: "\e805";
+}
+
+/* 2017-11-15 */
+
+.icon-icon-esports:before {
+    content: "\e804";
+}
+
+/* 2017-09-01 */
+
+.icon-icon-asiamiles:before, .icon-icon-asiamiles--inline:before {
+    content: "\f242";
+}
+
+.icon-icon-asiamiles--inline {
+    display: inline !important;
+    margin-bottom: 0 !important;
+    vertical-align: text-bottom;
+    font-size: 1.2em !important;
+    margin-right: -0.1em;
+}
+
+/* temp for corpweb */
+
+body.v4 .detail-body-header .icon-icon-asiamiles--inline {
+    vertical-align: sub;
+}
+
+/* 2020-02-19 */
+
+.icon-icon_diy:before {
+    content: "\e809";
+}
+
+/* 2019-01-21 */
+
+.icon-icon-tablet:before {
+    content: "\e808";
+}
+
+/* 2017-07-05 */
+
+.icon-icon-toys:before {
+    content: "\f240";
+}
+
+.icon-icon-outdoors:before {
+    content: "\f241";
+}
+
+/* 2017-05-31 */
+
+.icon-icon-fbb:before {
+    content: "\e803";
+}
+
+.icon-icon-reminder:before {
+    content: "\f108";
+}
+
+/* 2017-04-13 */
+
+.icon-icon-share:before {
+    content: "\f107";
+}
+
+/* dont use .icon- , always use .icon-icon- */
+
+.icon-share:before {
+    content: "\f107";
+}
+
+/* 2017-01-19 */
+
+.icon-icon_applewatch:before {
+    content: "\f106";
+}
+
+/* 2016-08-23 */
+
+.icon-icon-plans:before {
+    content: "\f236";
+}
+
+.icon-icon-notavailable:before {
+    content: "\f235";
+}
+
+.icon-icon-livechat:before {
+    content: "\f234";
+}
+
+/* 2016-02-19 */
+
+/* re-add 2016-06-07 */
+
+.icon-icon-checkmark:before {
+    content: "\f233";
+}
+
+.icon-icon-home:before {
+    content: "\f232";
+}
+
+.icon-icon-delete:before {
+    content: "\f231";
+}
+
+.icon-icon-plus:before {
+    content: "\f230";
+}
+
+.icon-icon-arrow-up:before {
+    content: "\f229";
+}
+
+.icon-icon-designator:before {
+    content: "\f200";
+}
+
+.icon-icon-arrow-next2:before {
+    content: "\f226";
+}
+
+.icon-icon_cart2:before {
+    content: "\f227";
+}
+
+.icon-icon-info:before {
+    content: "\f225";
+    color: #ccc;
+}
+
+.icon-icon-enquire:before {
+    content: "\f224";
+}
+
+.icon-icon-car-accessories:before {
+    content: "\f220";
+}
+
+.icon-icon-docks:before {
+    content: "\f221";
+}
+
+.icon-icon-headphones-and-speakers:before {
+    content: "\f222";
+}
+
+.icon-icon-screen-protectors:before {
+    content: "\f223";
+}
+
+.icon-icon-hide:before {
+    content: "\f21e";
+}
+
+.icon-icon-show:before {
+    content: "\f21f";
+}
+
+.icon-icon-arrow-down:before {
+    content: "\f21c";
+}
+
+.icon-icon-arrow-up-solid:before {
+    content: "\f21d";
+}
+
+.icon-icon-question:before {
+    content: "\f217";
+}
+
+.icon-icon-close:before {
+    content: "\f218";
+}
+
+.icon-icon-edit:before {
+    content: "\f219";
+}
+
+.icon-icon-remove:before {
+    content: "\f21a";
+}
+
+.icon-icon-signup:before {
+    content: "\f21b";
+}
+
+.icon-icon-calendar:before {
+    content: "\f215";
+}
+
+.icon-icon-clock:before {
+    content: "\f216";
+}
+
+.icon-icon-warning:before {
+    content: "\f214";
+}
+
+.icon-icon-chat:before {
+    content: "\f213";
+}
+
+.icon-icon-logout:before {
+    content: "\f211";
+}
+
+.icon-icon-myacc:before {
+    content: "\f212";
+}
+
+.icon-icon-camera-accessories:before {
+    content: "\f207";
+}
+
+.icon-icon-cases:before {
+    content: "\f208";
+}
+
+.icon-icon-adaptors-and-cables:before {
+    content: "\f209";
+}
+
+.icon-icon-fun-gadgets:before {
+    content: "\f20a";
+}
+
+.icon-icon-headphones:before {
+    content: "\f20b";
+}
+
+.icon-icon-digital-storage-devices:before {
+    content: "\f20c";
+}
+
+.icon-icon-others:before, .icon-icon-premiums:before {
+    content: "\f20d";
+}
+
+.icon-icon-powerbanks:before {
+    content: "\f20e";
+}
+
+.icon-icon-speakers:before {
+    /*content: "\f20f";*/
+    content: "\f222";
+}
+
+.icon-icon-smart-wearables:before {
+    content: "\f210";
+}
+
+.icon-icon_giftwrap:before {
+    content: "\f206";
+}
+
+.icon-icon-filter-reverse:before {
+    content: "\f203";
+}
+
+.icon-icon-menu-reverse:before {
+    content: "\f204";
+}
+
+.icon-icon-sorting-reverse:before {
+    content: "\f205";
+}
+
+.icon-icon-filter:before {
+    content: "\f201";
+}
+
+.icon-icon-menu:before {
+    content: "\f202";
+}
+
+.icon-icon-sorting:before {
+    content: "\f228";
+}
+
+.icon-icon_evouncher:before {
+    content: "\f105";
+}
+
+.icon-icon_cart:before {
+    content: "\f104";
+}
+
+.icon-icon_accessories:before {
+    content: "\f100";
+}
+
+.icon-icon_iphone:before {
+    content: "\f101";
+}
+
+.icon-icon_prepaid:before {
+    content: "\f102";
+}
+
+.icon-icon_smartphone:before {
+    content: "\f103";
+}

@@ -1,0 +1,15 @@
+.customContent.TopMsg {
+	text-align: center;
+	border: 2px solid yellow;
+}
+
+.loadingSpin:after {
+    overflow: hidden;
+    position: absolute;
+    background: #fff url(../images/spinner.gif) center no-repeat;
+    background-size: 60px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*z-index: 1;*/
+}

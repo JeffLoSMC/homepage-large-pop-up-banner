@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3941784, 2020-08-30T22:44:23-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: GrotaSansBook by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/grota-sans/book/
+ * 
+ * Webfont: GrotaSansMedium by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/grota-sans/medium/
+ * 
+ * Webfont: GrotaSansSemiBold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/grota-sans/semi-bold/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2014 by Eli Hernandez &amp;amp; Daniel Hernandez. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("3c2598.css");
+  
+@font-face {
+  font-family: 'GrotaSansMedium';
+  src: url('../fonts/font.woff2') format('woff2'), url('../fonts/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'GrotaSansBook';
+  src: url('../fonts/font_2.woff2') format('woff2'), url('../fonts/font_1.woff') format('woff');
+}
+@font-face {
+  font-family: 'GrotaSansSemiBold';
+  src: url('../fonts/font_1.woff2') format('woff2'), url('../fonts/font_2.woff') format('woff');
+}
+
