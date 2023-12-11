@@ -13,8 +13,8 @@ import {
   CONTENT.TC.DEFAULT_TERMS = `優惠期至2022年5月15日，限量200張，先到先得。受條款及細則約束。`;
   CONTENT.EN.DEFAULT_TERMS = `Valid till 15 May 2022. 200 Quota Avaliable, First-Come-First-Served.T&Cs apply`;
   
-  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/Samsung.jsp?itm_campaign=20220429-mothersday-special&itm_source=online-store&itm_medium=popupbanner&itm_content=samsung-corner-page&itm_ga=os`;
-  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/Samsung.jsp?itm_campaign=20220429-mothersday-special&itm_source=online-store&itm_medium=popupbanner&itm_content=samsung-corner-page&itm_ga=os`;
+  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/christmas-gifting-catalog_2023.jsp?itm_campaign=20231212-christmas-cw&itm_source=smartone-corp-web&itm_medium=top-banner&itm_content=tc&itm_ga=cw`;
+  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/christmas-gifting-catalog_2023.jsp?itm_campaign=20231212-christmas-cw&itm_source=smartone-corp-web&itm_medium=top-banner&itm_content=en&itm_ga=cw`;
   
   CONTENT.TC.BG = 'IMG_V4/popup_banner/christmas/tc/Christmas_Campaign_PageBanner_V1_d_TC.jpg';
   CONTENT.TC.BG_M = 'IMG_V4/popup_banner/christmas/tc/Christmas_Campaign_PageBanner_V1_m_TC.jpg';
