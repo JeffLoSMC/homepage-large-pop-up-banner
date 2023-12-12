@@ -68,10 +68,10 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   };
 
   OVERLAYBANNER.initBanner = (target) => {                
-      if ((POPUP_BANNER.isNotReachCountOfShow(3) && ASSIST.isDataAndroid()) || ASSIST.isDev) {
+      if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
         const _target = target || document.getElementById('site-preloader');
         const _callback = () => {
-          general({
+          christmas({
             rendered: () => POPUP_BANNER.addCountOfShow(1),
           });
         };
@@ -79,21 +79,6 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
 		  } else {
         return;
       }
-  };
-
-
-  OVERLAYBANNER.initChristmasBanner = (target) => {                
-    if ((POPUP_BANNER.isNotReachCountOfShow(3) && ASSIST.isDataAndroid()) || ASSIST.isDev) {
-      const _target = target || document.getElementById('site-preloader');
-      const _callback = () => {
-        christmas({
-          rendered: () => POPUP_BANNER.addCountOfShow(1),
-        });
-      };
-      return _callback();
-    } else {
-      return;
-    }
   };
 
   
