@@ -13,8 +13,8 @@ import {
   CONTENT.TC.DEFAULT_TERMS = ``;
   CONTENT.EN.DEFAULT_TERMS = ``;
   
-  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/samsung-cny-rewards-week_2024.jsp`;
-  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/samsung-cny-rewards-week_2024.jsp`;
+  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/samsung-cny-rewards-week_2024.jsp?itm_campaign=20240201-cny-samsung-os-pop&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=tc&itm_ga=os`;
+  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/samsung-cny-rewards-week_2024.jsp?itm_campaign=20240201-cny-samsung-os-pop&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=en&itm_ga=os`;
 
   CONTENT.TC.BG = 'IMG_V4/popup_banner/CNY_Vday_samsung/tc/CNY_Vday_samsung_banner_d.jpg';
   CONTENT.TC.BG_M = 'IMG_V4/popup_banner/CNY_Vday_samsung/tc/CNY_Vday_samsung_banner_m.jpg';
