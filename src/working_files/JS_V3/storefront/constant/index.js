@@ -12,7 +12,8 @@ const CAMPAIGN = {
   CMHK0: 'cmhk0',
   CMHK1a: 'cmhk1a',
   CMHK1b: 'cmhk1b',
-  CHRISTMAS: 'christmas'
+  CHRISTMAS: 'christmas',
+  CNYREWARDS: 'cnyRewards'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

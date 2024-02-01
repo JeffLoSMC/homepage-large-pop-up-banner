@@ -15,6 +15,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.CHRISTMAS) {
     ga('send', 'event', 'Homepage_large_pop_up_christmas', 'Impression', 'Click_christmas');
   }
+  if (campaign == CAMPAIGN.CNYREWARDS) {
+    ga('send', 'event', 'Homepage_large_pop_up_cnyRewards', 'Impression', 'Click_cnyRewards');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -49,6 +52,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.CHRISTMAS) {
       ga('send', 'event', 'Homepage_large_pop_up_christmas', 'Click', 'First_Time_christmas');
+    }
+    if (campaign == CAMPAIGN.CNYREWARDS) {
+      ga('send', 'event', 'Homepage_large_pop_up_cnyRewards', 'Click', 'First_Time_cnyRewards');
     }
   });
   window.onresize = function () {

@@ -11,6 +11,7 @@ import COOKIES from './cookie';
 import MODAL from './modal';
 import general from './components/banner/general'
 import christmas from './components/banner/christmas';
+import cnyRewards from './components/banner/cnyRewards';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -70,7 +71,7 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   OVERLAYBANNER.initBanner = (target) => {    
     const _target = target || document.getElementById('site-preloader');
     const _callback = () => {
-      christmas({
+      cnyRewards({
         rendered: () => POPUP_BANNER.addCountOfShow(1),
       });
     };
