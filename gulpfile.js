@@ -33,7 +33,7 @@
  babelify = require('babelify'),
  source = require('vinyl-source-stream'),
  buffer = require('vinyl-buffer'),
- SMS_ID = '48544';
+ SMS_ID = '48617';
 (src_folder = './src/'),
 (src_assets_folder = src_folder + 'working_files/'),
 (dist_folder = './dist/'),
