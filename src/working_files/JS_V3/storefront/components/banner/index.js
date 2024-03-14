@@ -18,6 +18,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.CNYREWARDS) {
     ga('send', 'event', 'Homepage_large_pop_up_cnyRewards', 'Impression', 'Click_cnyRewards');
   }
+  if (campaign == CAMPAIGN.EASTER) {
+    ga('send', 'event', 'Homepage_large_pop_up_easter', 'Impression', 'Click_easter');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -55,6 +58,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.CNYREWARDS) {
       ga('send', 'event', 'Homepage_large_pop_up_cnyRewards', 'Click', 'First_Time_cnyRewards');
+    }
+    if (campaign == CAMPAIGN.EASTER) {
+      ga('send', 'event', 'Homepage_large_pop_up_easter', 'Click', 'First_Time_easter');
     }
   });
   window.onresize = function () {

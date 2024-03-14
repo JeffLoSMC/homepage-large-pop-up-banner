@@ -12,28 +12,28 @@
 
 ### 5. Create campaign id:
 
-    \src\working_files\JS_V3\corpweb_script\constant\index.js
+    \src\working_files\JS_V3\storefront\constant\index.js
 
 ### 6. Create banner with template
 
-    e.g ****\src\working_files\JS_V3\corpweb_script\components\banner\cmhk0.js
+    e.g ****\src\working_files\JS_V3\storefront\components\banner\cmhk0.js
 
     Useful reusable functions:
-    \src\working_files\JS_V3\corpweb_script\util\index.js
-    \src\working_files\JS_V3\corpweb_script\modal\index.js
+    \src\working_files\JS_V3\storefront\util\index.js
+    \src\working_files\JS_V3\storefront\modal\index.js
 
     Image folder:
     \src\working_files\IMG_V4\popup_banner
 
     Config CSS with "campaign id":
-    \src\working_files\CSS_V3\corpweb_script\overlay_banner.sass
+    \src\working_files\CSS_V3\storefront\overlay_banner.sass
 
     Register event listener:
-    \src\working_files\JS_V3\corpweb_script\components\banner\index.js
+    \src\working_files\JS_V3\storefront\components\banner\index.js
 
-### 7. Create _relay42Callbacks_ for initialize banners:
+### 7. Edit _OVERLAYBANNER.initBanner_ for initialize banners:
 
-    \src\working_files\JS_V3\corpweb_script\overlay_banner.js
+    \src\working_files\JS_V3\storefront\overlay_banner.js
 
 ### 8. Run _npm run deploy_ to deploy files 7a
 
