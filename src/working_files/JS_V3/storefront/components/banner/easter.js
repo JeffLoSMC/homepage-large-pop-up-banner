@@ -13,8 +13,8 @@ import {
   CONTENT.TC.DEFAULT_TERMS = ``;
   CONTENT.EN.DEFAULT_TERMS = ``;
 
-  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/happy-easter-funival.jsp`;
-  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/happy-easter-funival.jsp`;
+  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/happy-easter-funival.jsp?itm_campaign=20240315-easter-pop-os&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=tc&itm_ga=os`;
+  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/happy-easter-funival.jsp?itm_campaign=20240315-easter-pop-os&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=en&itm_ga=os`;
 
   CONTENT.TC.BG = 'IMG_V4/popup_banner/OSO_easter_campaign_2024/tc/easter_campaign_popup_banner_d_tc.jpg';
   CONTENT.TC.BG_M = 'IMG_V4/popup_banner/OSO_easter_campaign_2024/tc/easter_campaign_popup_banner_m_tc.jpg';
