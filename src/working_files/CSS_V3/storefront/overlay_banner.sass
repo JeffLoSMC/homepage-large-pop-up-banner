@@ -108,26 +108,20 @@ $white: #ffffff
             @include desktop
                 padding: 15px
         &.bannerBackground
-            max-width: 260px
-            max-height: 450px
-            background-position: 50% 0
-            background-size: 100% auto
             background-repeat: no-repeat
             background-color: #B0DBFD
-            @include mobile
-                max-width: 95%
-                max-height: none
-                background-position: 50% 0
+            max-height: none
             @include ipx
                 background-size: 110% auto
-            @media screen and (min-width: 550px) and (max-width: 768px)
-                max-width: 490px
-                background-position: center center
-                background-size: auto 100%
             @include desktop
                 max-width: 100%
                 background-position: right center
                 background-size: 100% auto
+            @media screen and (max-width: 785px)
+                background-size: cover
+                background-position: center
+                max-width: 232px
+                max-height: 420px
     .homePopup
         height: 100%
         &__row
@@ -415,15 +409,6 @@ $white: #ffffff
         bottom: 0
       @include desktop
         width: 200%
-
-    #christmas_BG_M,
-    #cnyRewards_BG_M,
-    #easter_BG_M
-        &.bannerBackground
-            background-size: cover
-            background-position: center
-            max-width: 232px
-            max-height: 420px
 
 
 

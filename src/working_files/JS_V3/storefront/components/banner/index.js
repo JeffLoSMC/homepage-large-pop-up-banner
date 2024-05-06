@@ -21,6 +21,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.EASTER) {
     ga('send', 'event', 'Homepage_large_pop_up_easter', 'Impression', 'Click_easter');
   }
+  if (campaign == CAMPAIGN.MOTHER) {
+    ga('send', 'event', 'Homepage_large_pop_up_mother', 'Impression', 'Click_mother');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -61,6 +64,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.EASTER) {
       ga('send', 'event', 'Homepage_large_pop_up_easter', 'Click', 'First_Time_easter');
+    }
+    if (campaign == CAMPAIGN.MOTHER) {
+      ga('send', 'event', 'Homepage_large_pop_up_mother', 'Click', 'First_Time_mother');
     }
   });
   window.onresize = function () {

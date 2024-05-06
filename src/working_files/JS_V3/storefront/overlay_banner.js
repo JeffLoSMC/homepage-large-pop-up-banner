@@ -13,6 +13,7 @@ import general from './components/banner/general'
 import christmas from './components/banner/christmas';
 import cnyRewards from './components/banner/cnyRewards';
 import easter from './components/banner/easter';
+import mother from './components/banner/mother';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -69,27 +70,27 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
     return OBSERVER.watch.observe(target, OBSERVER.config);
   };
 
-  // OVERLAYBANNER.initBanner = (target) => {
-  //   const _target = target || document.getElementById('site-preloader');
-  //   const _callback = () => {
-  //     easter({
-  //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-  //     });
-  //   };
-  //   return _callback();
+  OVERLAYBANNER.initBanner = (target) => {
+    const _target = target || document.getElementById('site-preloader');
+    const _callback = () => {
+      mother({
+        rendered: () => POPUP_BANNER.addCountOfShow(1),
+      });
+    };
+    return _callback();
 
-  //     // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
-  //     //   const _target = target || document.getElementById('site-preloader');
-  //     //   const _callback = () => {
-  //     //     christmas({
-  //     //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-  //     //     });
-  //     //   };
-  //     //   return _callback();
-	// 	  // } else {
-  //     //   return;
-  //     // }
-  // };
+      // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
+      //   const _target = target || document.getElementById('site-preloader');
+      //   const _callback = () => {
+      //     christmas({
+      //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+      //     });
+      //   };
+      //   return _callback();
+		  // } else {
+      //   return;
+      // }
+  };
 
   
   const initBannerOn = UTIL.getParameterByName('banner');
