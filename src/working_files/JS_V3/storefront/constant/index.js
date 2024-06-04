@@ -15,7 +15,8 @@ const CAMPAIGN = {
   CHRISTMAS: 'christmas',
   CNYREWARDS: 'cnyRewards',
   EASTER: 'easter',
-  MOTHER: 'mother'
+  MOTHER: 'mother',
+  FATHER: 'father'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

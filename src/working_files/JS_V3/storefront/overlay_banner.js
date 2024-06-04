@@ -14,6 +14,7 @@ import christmas from './components/banner/christmas';
 import cnyRewards from './components/banner/cnyRewards';
 import easter from './components/banner/easter';
 import mother from './components/banner/mother';
+import father from './components/banner/father';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -73,7 +74,7 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   OVERLAYBANNER.initBanner = (target) => {
     const _target = target || document.getElementById('site-preloader');
     const _callback = () => {
-      mother({
+      father({
         rendered: () => POPUP_BANNER.addCountOfShow(1),
       });
     };
