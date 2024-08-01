@@ -16,7 +16,9 @@ const CAMPAIGN = {
   CNYREWARDS: 'cnyRewards',
   EASTER: 'easter',
   MOTHER: 'mother',
-  FATHER: 'father'
+  FATHER: 'father',
+  BACKTOSCHOOL: 'backToSchool',
+  FLIPFOLD: 'flipfold'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

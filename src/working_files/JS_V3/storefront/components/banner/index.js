@@ -27,6 +27,12 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.FATHER) {
     ga('send', 'event', 'Homepage_large_pop_up_father', 'Impression', 'Click_father');
   }
+  if (campaign == CAMPAIGN.BACKTOSCHOOL) {
+    ga('send', 'event', 'Homepage_large_pop_up_backToSchool', 'Impression', 'Click_backToSchool');
+  }
+  if (campaign == CAMPAIGN.FLIPFOLD) {
+    ga('send', 'event', 'Homepage_large_pop_up_flipfold', 'Impression', 'Click_flipfold');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -73,6 +79,12 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.FATHER) {
       ga('send', 'event', 'Homepage_large_pop_up_father', 'Click', 'First_Time_father');
+    }
+    if (campaign == CAMPAIGN.BACKTOSCHOOL) {
+      ga('send', 'event', 'Homepage_large_pop_up_backToSchool', 'Click', 'First_Time_backToSchool');
+    }
+    if (campaign == CAMPAIGN.FLIPFOLD) {
+      ga('send', 'event', 'Homepage_large_pop_up_flipfold', 'Click', 'First_Time_flipfold');
     }
   });
   window.onresize = function () {
