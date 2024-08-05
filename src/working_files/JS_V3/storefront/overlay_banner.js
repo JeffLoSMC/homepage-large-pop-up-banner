@@ -95,6 +95,16 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
       // }
   };
 
+  OVERLAYBANNER.initSecondBanner = (target) => {
+    const _target = target || document.getElementById('site-preloader');
+    const _callback = () => {
+      backToSchool({
+        rendered: () => POPUP_BANNER.addCountOfShow(1),
+      });
+    };
+    return _callback();
+  };
+
   
   const initBannerOn = UTIL.getParameterByName('banner');
 
