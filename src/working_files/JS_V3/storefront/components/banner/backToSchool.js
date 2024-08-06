@@ -16,11 +16,11 @@ import {
   CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/fatherday2024.jsp?itm_campaign=20240604-fathersday-pop&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=tc&itm_ga=os`;
   CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/fatherday2024.jsp?itm_campaign=20240604-fathersday-pop&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=en&itm_ga=os`;
 
-  CONTENT.TC.BG = 'IMG_V4/popup_banner/Fathersday_2024/fathers2024_day_campaign_popup_banner_TC.jpg';
-  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/Fathersday_2024/fathers2024_day_campaign_popup_banner_m_TC.jpg';
+  CONTENT.TC.BG = 'IMG_V4/popup_banner/back_to_school_2024/backtoschool_popbanner_d_TC.jpg';
+  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/back_to_school_2024/backtoschool_popbanner_m_TC.jpg';
   
-  CONTENT.EN.BG = 'IMG_V4/popup_banner/Fathersday_2024/fathers2024_day_campaign_popup_banner_EN.jpg';
-  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/Fathersday_2024/fathers2024_day_campaign_popup_banner_m_EN.jpg';
+  CONTENT.EN.BG = 'IMG_V4/popup_banner/back_to_school_2024/backtoschool_popbanner_d_EN.jpg';
+  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/back_to_school_2024/backtoschool_popbanner_m_EN.jpg';
   
   const backToSchool = POPUP_BANNER.init({
 	content: CONTENT,
