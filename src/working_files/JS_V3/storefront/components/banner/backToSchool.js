@@ -13,8 +13,8 @@ import {
   CONTENT.TC.DEFAULT_TERMS = ``;
   CONTENT.EN.DEFAULT_TERMS = ``;
 
-  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/fatherday2024.jsp?itm_campaign=20240604-fathersday-pop&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=tc&itm_ga=os`;
-  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/fatherday2024.jsp?itm_campaign=20240604-fathersday-pop&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=en&itm_ga=os`;
+  CONTENT.TC.DEFAULT_PLAN_URL = `/tc/storefront/back-to-school.jsp?itm_campaign=20240805-bts-popup&itm_source=smartone-onlinestore&itm_medium=popup&itm_content=tc&itm_ga=os`;
+  CONTENT.EN.DEFAULT_PLAN_URL = `/en/storefront/back-to-school.jsp?itm_campaign=20240805-bts-popup&itm_source=smartone-onlinestore&itm_medium=popup&itm_content=en&itm_ga=os`;
 
   CONTENT.TC.BG = 'IMG_V4/popup_banner/back_to_school_2024/backtoschool_popbanner_d_TC.jpg';
   CONTENT.TC.BG_M = 'IMG_V4/popup_banner/back_to_school_2024/backtoschool_popbanner_m_TC.jpg';
