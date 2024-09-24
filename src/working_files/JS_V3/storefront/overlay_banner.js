@@ -73,27 +73,27 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
     return OBSERVER.watch.observe(target, OBSERVER.config);
   };
 
-  OVERLAYBANNER.initBanner = (target) => {
-    const _target = target || document.getElementById('site-preloader');
-    const _callback = () => {
-      backToSchool({
-        rendered: () => POPUP_BANNER.addCountOfShow(1),
-      });
-    };
-    return _callback();
+  // OVERLAYBANNER.initBanner = (target) => {
+  //   const _target = target || document.getElementById('site-preloader');
+  //   const _callback = () => {
+  //     backToSchool({
+  //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+  //     });
+  //   };
+  //   return _callback();
 
-      // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
-      //   const _target = target || document.getElementById('site-preloader');
-      //   const _callback = () => {
-      //     christmas({
-      //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-      //     });
-      //   };
-      //   return _callback();
-		  // } else {
-      //   return;
-      // }
-  };
+  //     // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
+  //     //   const _target = target || document.getElementById('site-preloader');
+  //     //   const _callback = () => {
+  //     //     christmas({
+  //     //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+  //     //     });
+  //     //   };
+  //     //   return _callback();
+	// 	  // } else {
+  //     //   return;
+  //     // }
+  // };
   
   const initBannerOn = UTIL.getParameterByName('banner');
 
