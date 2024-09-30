@@ -17,6 +17,7 @@ import mother from './components/banner/mother';
 import father from './components/banner/father';
 import backToSchool from './components/banner/backToSchool';
 import flipfold from './components/banner/flipfold';
+import iphone16 from './components/banner/iphone16';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -73,27 +74,27 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
     return OBSERVER.watch.observe(target, OBSERVER.config);
   };
 
-  // OVERLAYBANNER.initBanner = (target) => {
-  //   const _target = target || document.getElementById('site-preloader');
-  //   const _callback = () => {
-  //     backToSchool({
-  //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-  //     });
-  //   };
-  //   return _callback();
+  OVERLAYBANNER.initBanner = (target) => {
+    const _target = target || document.getElementById('site-preloader');
+    const _callback = () => {
+      iphone16({
+        rendered: () => POPUP_BANNER.addCountOfShow(1),
+      });
+    };
+    return _callback();
 
-  //     // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
-  //     //   const _target = target || document.getElementById('site-preloader');
-  //     //   const _callback = () => {
-  //     //     christmas({
-  //     //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-  //     //     });
-  //     //   };
-  //     //   return _callback();
-	// 	  // } else {
-  //     //   return;
-  //     // }
-  // };
+      // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
+      //   const _target = target || document.getElementById('site-preloader');
+      //   const _callback = () => {
+      //     christmas({
+      //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+      //     });
+      //   };
+      //   return _callback();
+		  // } else {
+      //   return;
+      // }
+  };
   
   const initBannerOn = UTIL.getParameterByName('banner');
 

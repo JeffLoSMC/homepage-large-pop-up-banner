@@ -33,6 +33,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.FLIPFOLD) {
     ga('send', 'event', 'Homepage_large_pop_up_flipfold', 'Impression', 'Click_flipfold');
   }
+  if (campaign == CAMPAIGN.IPHONE16) {
+    ga('send', 'event', 'Homepage_large_pop_up_iphone16', 'Impression', 'Click_iphone16');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -85,6 +88,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.FLIPFOLD) {
       ga('send', 'event', 'Homepage_large_pop_up_flipfold', 'Click', 'First_Time_flipfold');
+    }
+    if (campaign == CAMPAIGN.IPHONE16) {
+      ga('send', 'event', 'Homepage_large_pop_up_iphone16', 'Click', 'First_Time_iphone16');
     }
   });
   window.onresize = function () {
