@@ -13,14 +13,14 @@ import {
   CONTENT.TC.DEFAULT_TERMS = ``;
   CONTENT.EN.DEFAULT_TERMS = ``;
 
-  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/apple/listing/iPhone/?itm_campaign=202409-ip16pro-popup&itm_source=itm&itm_medium=pop-up-banner&itm_content=OStore-iP-popup-tc&itm_ga=os";
-  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/apple/listing/iPhone/?itm_campaign=202409-ip16pro-popup&itm_source=itm&itm_medium=pop-up-banner&itm_content=OStore-iP-popup-en&itm_ga=os";
+  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/apple/listing/iPhone/?itm_campaign=202410-ip16pro-popup&itm_source=itm&itm_medium=pop-up-banner&itm_content=OStore-iP-popup-tc&itm_ga=os";
+  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/apple/listing/iPhone/?itm_campaign=202410-ip16pro-popup&itm_source=itm&itm_medium=pop-up-banner&itm_content=OStore-iP-popup-en&itm_ga=os";
   
-  CONTENT.TC.BG = 'IMG_V4/popup_banner/300_discount_off_iphone_16_series_all_popup/300_discount_off_iphone_16_series_all_popup_TC.jpg';
-  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/300_discount_off_iphone_16_series_all_popup/300_discount_off_iphone_16_series_all_popup_mobTC.jpg';
+  CONTENT.TC.BG = 'IMG_V4/popup_banner/iPhone_16_Series_In_Stock_All_Models/iPhone_16_Series_In_Stock_All_Models_popup_TC.jpg';
+  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/iPhone_16_Series_In_Stock_All_Models/iPhone_16_Series_In_Stock_All_Models_popup_mobTC.jpg';
   
-  CONTENT.EN.BG = 'IMG_V4/popup_banner/300_discount_off_iphone_16_series_all_popup/300_discount_off_iphone_16_series_all_popup_EN.jpg';
-  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/300_discount_off_iphone_16_series_all_popup/300_discount_off_iphone_16_series_all_popup_mobEN.jpg';
+  CONTENT.EN.BG = 'IMG_V4/popup_banner/iPhone_16_Series_In_Stock_All_Models/iPhone_16_Series_In_Stock_All_Models_popup_EN.jpg';
+  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/iPhone_16_Series_In_Stock_All_Models/iPhone_16_Series_In_Stock_All_Models_popup_mobEN.jpg';
   
   const iphone16 = POPUP_BANNER.init({
     content: CONTENT,
