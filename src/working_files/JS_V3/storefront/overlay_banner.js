@@ -18,6 +18,7 @@ import father from './components/banner/father';
 import backToSchool from './components/banner/backToSchool';
 import flipfold from './components/banner/flipfold';
 import iphone16 from './components/banner/iphone16';
+import double11 from './components/banner/double11';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -77,7 +78,7 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   OVERLAYBANNER.initBanner = (target) => {
     const _target = target || document.getElementById('site-preloader');
     const _callback = () => {
-      iphone16({
+      double11({
         rendered: () => POPUP_BANNER.addCountOfShow(1),
       });
     };

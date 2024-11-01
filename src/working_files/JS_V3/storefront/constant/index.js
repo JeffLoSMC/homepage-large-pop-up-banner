@@ -19,7 +19,8 @@ const CAMPAIGN = {
   FATHER: 'father',
   BACKTOSCHOOL: 'backToSchool',
   FLIPFOLD: 'flipfold',
-  IPHONE16: 'iphone16'
+  IPHONE16: 'iphone16',
+  DOUBLE11: 'double11'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };
