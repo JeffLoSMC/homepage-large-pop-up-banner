@@ -19,6 +19,7 @@ import backToSchool from './components/banner/backToSchool';
 import flipfold from './components/banner/flipfold';
 import iphone16 from './components/banner/iphone16';
 import double11 from './components/banner/double11';
+import blackfriday2024 from './components/banner/blackfriday2024';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -78,7 +79,7 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   OVERLAYBANNER.initBanner = (target) => {
     const _target = target || document.getElementById('site-preloader');
     const _callback = () => {
-      double11({
+      blackfriday2024({
         rendered: () => POPUP_BANNER.addCountOfShow(1),
       });
     };

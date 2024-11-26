@@ -20,7 +20,8 @@ const CAMPAIGN = {
   BACKTOSCHOOL: 'backToSchool',
   FLIPFOLD: 'flipfold',
   IPHONE16: 'iphone16',
-  DOUBLE11: 'double11'
+  DOUBLE11: 'double11',
+  BLACKFRIDAY2024: 'blackfriday2024'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

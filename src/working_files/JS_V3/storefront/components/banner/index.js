@@ -39,6 +39,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.DOUBLE11) {
     ga('send', 'event', 'Homepage_large_pop_up_double11', 'Impression', 'Click_double11');
   }
+  if (campaign == CAMPAIGN.BLACKFRIDAY2024) {
+    ga('send', 'event', 'Homepage_large_pop_up_blackfriday2024', 'Impression', 'Click_blackfriday2024');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -97,6 +100,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.DOUBLE11) {
       ga('send', 'event', 'Homepage_large_pop_up_double11', 'Click', 'First_Time_double11');
+    }
+    if (campaign == CAMPAIGN.BLACKFRIDAY2024) {
+      ga('send', 'event', 'Homepage_large_pop_up_blackfriday2024', 'Click', 'First_Time_blackfriday2024');
     }
   });
   window.onresize = function () {
