@@ -13,14 +13,14 @@ import {
   CONTENT.TC.DEFAULT_TERMS = ``;
   CONTENT.EN.DEFAULT_TERMS = ``;
 
-  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/double11_2024.jsp?itm_campaign=20241101-1111offer&itm_source=itm&itm_medium=pop-up-banner&itm_content=OStore-popup-tc&itm_ga=os";
-  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/double11_2024.jsp?itm_campaign=20241101-1111offer&itm_source=itm&itm_medium=pop-up-banner&itm_content=OStore-popup-en&itm_ga=os";
+  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/blackfriday_2024.jsp?itm_campaign=20241129-bf-popup&itm_source=itm&itm_medium=pop-up-banner&itm_content=bfpop-tc&itm_ga=os";
+  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/blackfriday_2024.jsp?itm_campaign=20241129-bf-popup&itm_source=itm&itm_medium=pop-up-banner&itm_content=bfpop-en&itm_ga=os";
   
-  CONTENT.TC.BG = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_d_tc02.gif';
-  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_m_tc03.gif';
+  CONTENT.TC.BG = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_tc_d.gif';
+  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_tc_m.gif';
   
-  CONTENT.EN.BG = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_d_tc02.gif';
-  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_m_tc03.gif';
+  CONTENT.EN.BG = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_en.gif';
+  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/Blackfriday_2024/Blackfriday_popbanner_en_m.gif';
   
   const blackfriday2024 = POPUP_BANNER.init({
     content: CONTENT,
