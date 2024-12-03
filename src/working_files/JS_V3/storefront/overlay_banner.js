@@ -20,6 +20,7 @@ import flipfold from './components/banner/flipfold';
 import iphone16 from './components/banner/iphone16';
 import double11 from './components/banner/double11';
 import blackfriday2024 from './components/banner/blackfriday2024';
+import defaultPopup from './components/banner/defaultPopup';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -79,7 +80,7 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   OVERLAYBANNER.initBanner = (target) => {
     const _target = target || document.getElementById('site-preloader');
     const _callback = () => {
-      blackfriday2024({
+      defaultPopup({
         rendered: () => POPUP_BANNER.addCountOfShow(1),
       });
     };

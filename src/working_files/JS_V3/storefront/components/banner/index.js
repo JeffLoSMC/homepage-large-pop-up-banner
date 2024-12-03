@@ -42,6 +42,9 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.BLACKFRIDAY2024) {
     ga('send', 'event', 'Homepage_large_pop_up_blackfriday2024', 'Impression', 'Click_blackfriday2024');
   }
+  if (campaign == CAMPAIGN.XMAS2024) {
+    ga('send', 'event', 'Homepage_large_pop_up_xmas2024', 'Impression', 'Click_xmas2024');
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -103,6 +106,9 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.BLACKFRIDAY2024) {
       ga('send', 'event', 'Homepage_large_pop_up_blackfriday2024', 'Click', 'First_Time_blackfriday2024');
+    }
+    if (campaign == CAMPAIGN.XMAS2024) {
+      ga('send', 'event', 'Homepage_large_pop_up_xmas2024', 'Click', 'First_Time_xmas2024');
     }
   });
   window.onresize = function () {
