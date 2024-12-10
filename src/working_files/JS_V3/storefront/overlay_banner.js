@@ -10,16 +10,6 @@ import ASSIST from './assist';
 import COOKIES from './cookie';
 import MODAL from './modal';
 import general from './components/banner/general'
-import christmas from './components/banner/christmas';
-import cnyRewards from './components/banner/cnyRewards';
-import easter from './components/banner/easter';
-import mother from './components/banner/mother';
-import father from './components/banner/father';
-import backToSchool from './components/banner/backToSchool';
-import flipfold from './components/banner/flipfold';
-import iphone16 from './components/banner/iphone16';
-import double11 from './components/banner/double11';
-import blackfriday2024 from './components/banner/blackfriday2024';
 import defaultPopup from './components/banner/defaultPopup';
 import POPUP_BANNER from './components/banner';
 

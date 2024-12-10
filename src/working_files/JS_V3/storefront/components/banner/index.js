@@ -45,6 +45,13 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.XMAS2024) {
     ga('send', 'event', 'Homepage_large_pop_up_xmas2024', 'Impression', 'Click_xmas2024');
   }
+  if (campaign == CAMPAIGN.XMAS2024APPLE) {
+    if (UTIL.locale() == 'EN') {
+      ga('send', 'event', 'OS_POPUP_EN', 'Impression', '202412_OSPOPup_IM_en');
+    } else {
+      ga('send', 'event', 'OS_POPUP_TC', 'Impression', '202412_OSPOPup_IM_tc');
+    }
+  }
   jQuery('body').append($modal);
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
@@ -109,6 +116,13 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
     }
     if (campaign == CAMPAIGN.XMAS2024) {
       ga('send', 'event', 'Homepage_large_pop_up_xmas2024', 'Click', 'First_Time_xmas2024');
+    }
+    if (campaign == CAMPAIGN.XMAS2024APPLE) {
+      if (UTIL.locale() == 'EN') {
+        ga('send', 'event', 'OS_POPUP_EN', 'Click', '202412_OS_POPup_en');
+      } else {
+        ga('send', 'event', 'OS_POPUP_TC', 'Click', '202412_OS_POPup_tc');
+      }
     }
   });
   window.onresize = function () {

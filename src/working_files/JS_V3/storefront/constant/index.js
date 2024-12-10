@@ -22,7 +22,8 @@ const CAMPAIGN = {
   IPHONE16: 'iphone16',
   DOUBLE11: 'double11',
   BLACKFRIDAY2024: 'blackfriday2024',
-  XMAS2024: 'xmas2024'
+  XMAS2024: 'xmas2024',
+  XMAS2024APPLE: 'xmas2024apple',
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };
