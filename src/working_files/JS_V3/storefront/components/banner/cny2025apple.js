@@ -13,11 +13,11 @@ import {
   CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/cny_2025.jsp?itm_campaign=202501-cnypop-v2&itm_source=itm&itm_medium=pop-up-banner&itm_content=v2-apple&itm_ga=os";
   CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/cny_2025.jsp?itm_campaign=202501-cnypop-v2&itm_source=itm&itm_medium=pop-up-banner&itm_content=v2-apple&itm_ga=os";
   
-  CONTENT.TC.BG = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_TC.jpg';
-  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_mobTC.jpg';
+  CONTENT.TC.BG = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_TC.gif';
+  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_mobTC.gif';
   
-  CONTENT.EN.BG = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_EN.jpg';
-  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_mobEN.jpg';
+  CONTENT.EN.BG = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_EN.gif';
+  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/cny2025/CNY_popup_banner_ver1_mobEN.gif';
   
   const cny2025apple = POPUP_BANNER.init({
     content: CONTENT,
