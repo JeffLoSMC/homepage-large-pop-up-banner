@@ -11,6 +11,8 @@ import COOKIES from './cookie';
 import MODAL from './modal';
 import general from './components/banner/general'
 import defaultPopup from './components/banner/defaultPopup';
+import cny2025android from './components/banner/cny2025android';
+import cny2025apple from './components/banner/cny2025apple';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -67,28 +69,46 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
     return OBSERVER.watch.observe(target, OBSERVER.config);
   };
 
-  // OVERLAYBANNER.initBanner = (target) => {
-  //   const _target = target || document.getElementById('site-preloader');
-  //   const _callback = () => {
-  //     defaultPopup({
-  //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-  //     });
-  //   };
-  //   return _callback();
+  const randomDisplaySelect = () => {
+    let result = Math.round(Math.random()); // randomly generated 0 to 1
 
-  //     // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
-  //     //   const _target = target || document.getElementById('site-preloader');
-  //     //   const _callback = () => {
-  //     //     christmas({
-  //     //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-  //     //     });
-  //     //   };
-  //     //   return _callback();
-	// 	  // } else {
-  //     //   return;
-  //     // }
-  // };
+    return result;
+  };
+
+  OVERLAYBANNER.initBanner = (target) => {
+    const _target = target || document.getElementById('site-preloader');
+    const _callback = () => {
+      if(randomDisplaySelect() == 0){
+        cny2025android({
+          rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025ANDROID),
+        });
+      } else {
+        cny2025apple({
+          rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025APPLE),
+        });
+      }
+
+      // defaultPopup({
+      //   rendered: () => POPUP_BANNER.addCountOfShow(1),
+      // });
+    };
+    return _callback();
+
+      // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
+      //   const _target = target || document.getElementById('site-preloader');
+      //   const _callback = () => {
+      //     christmas({
+      //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+      //     });
+      //   };
+      //   return _callback();
+		  // } else {
+      //   return;
+      // }
+  };
   
+
+  // '?banner={{initBannerOn}} e.g.?overlayBanner=mnp-offer-check'
   const initBannerOn = UTIL.getParameterByName('banner');
 
   if (typeof OVERLAYBANNER[initBannerOn] === 'function') {

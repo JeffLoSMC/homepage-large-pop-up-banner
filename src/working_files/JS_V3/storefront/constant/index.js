@@ -24,6 +24,8 @@ const CAMPAIGN = {
   BLACKFRIDAY2024: 'blackfriday2024',
   XMAS2024: 'xmas2024',
   XMAS2024APPLE: 'xmas2024apple',
+  CNY2025ANDROID: 'cny2025android',
+  CNY2025APPLE: 'cny2025apple',
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

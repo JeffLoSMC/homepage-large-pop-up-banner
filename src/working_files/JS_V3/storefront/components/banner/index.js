@@ -39,17 +39,35 @@ POPUP_BANNER.render = (options) => {
   if (campaign == CAMPAIGN.DOUBLE11) {
     ga('send', 'event', 'Homepage_large_pop_up_double11', 'Impression', 'Click_double11');
   }
+  //OSO-226
   if (campaign == CAMPAIGN.BLACKFRIDAY2024) {
     ga('send', 'event', 'Homepage_large_pop_up_blackfriday2024', 'Impression', 'Click_blackfriday2024');
   }
+  //OSO-225
   if (campaign == CAMPAIGN.XMAS2024) {
     ga('send', 'event', 'Homepage_large_pop_up_xmas2024', 'Impression', 'Click_xmas2024');
   }
+  //OSO-233
   if (campaign == CAMPAIGN.XMAS2024APPLE) {
     if (UTIL.locale() == 'EN') {
       ga('send', 'event', 'OS_POPUP_EN', 'Impression', '202412_OSPOPup_IM_en');
     } else {
       ga('send', 'event', 'OS_POPUP_TC', 'Impression', '202412_OSPOPup_IM_tc');
+    }
+  }
+  //OSO-238
+  if (campaign == CAMPAIGN.CNY2025ANDROID) {
+    if (UTIL.locale() == 'EN') {
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202501_androidpop_CNY_IM');
+    } else {
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202501_androidpop_CNY_IM');
+    }
+  }
+  if (campaign == CAMPAIGN.CNY2025APPLE) {
+    if (UTIL.locale() == 'EN') {
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202501_applepop_CNY_IM');
+    } else {
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202501_applepop_CNY_IM');
     }
   }
   jQuery('body').append($modal);
@@ -122,6 +140,20 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
         ga('send', 'event', 'OS_POPUP_EN', 'Click', '202412_OS_POPup_en');
       } else {
         ga('send', 'event', 'OS_POPUP_TC', 'Click', '202412_OS_POPup_tc');
+      }
+    }
+    if (campaign == CAMPAIGN.CNY2025ANDROID) {
+      if (UTIL.locale() == 'EN') {
+        ga('send', 'event', 'OS_pop_en', 'Click', '202501_androidpop_CNY');
+      } else {
+        ga('send', 'event', 'OS_pop_tc', 'Click', '202501_androidpop_CNY');
+      }
+    }
+    if (campaign == CAMPAIGN.CNY2025APPLE) {
+      if (UTIL.locale() == 'EN') {
+        ga('send', 'event', 'OS_pop_en', 'Click', '202501_applepop_CNY');
+      } else {
+        ga('send', 'event', 'OS_pop_tc', 'Click', '202501_applepop_CNY');
       }
     }
   });
