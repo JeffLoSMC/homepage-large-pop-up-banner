@@ -10,8 +10,8 @@ import {
   CONTENT.EN = {};
   CONTENT.IMAGE = {};
 
-  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/cny_2025.jsp?itm_campaign=202501-cnypop-v1&itm_source=itm&itm_medium=pop-up-banner&itm_content=v1-android&itm_ga=os";
-  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/cny_2025.jsp?itm_campaign=202501-cnypop-v1&itm_source=itm&itm_medium=pop-up-banner&itm_content=v1-android&itm_ga=os";
+  CONTENT.TC.DEFAULT_PLAN_URL = "https://www.smartone.com/SmarTone-CARE/intro/tchinese/index.html?redirect=redpacket2025";
+  CONTENT.EN.DEFAULT_PLAN_URL = "https://www.smartone.com/SmarTone-CARE/intro/english/index.html?redirect=redpacket2025";
   
   CONTENT.TC.BG = 'IMG_V4/popup_banner/cny2025_leisee/cny_popup_d_TC.gif';
   CONTENT.TC.BG_M = 'IMG_V4/popup_banner/cny2025_leisee/cny_popup_m_TC.gif';
