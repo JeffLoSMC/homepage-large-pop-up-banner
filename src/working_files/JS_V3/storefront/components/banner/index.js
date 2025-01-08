@@ -175,15 +175,31 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
   };
 };
 
-POPUP_BANNER.isNotReachCountOfShow = (number) => {
-  const _count = COOKIES.get(COOKIES_NAME);
+POPUP_BANNER.isNotReachCountOfShow = (number, campaign) => {
+  campaign = campaign || null;
+  let newCookiesName = campaign? COOKIES_NAME + '_' + campaign : COOKIES_NAME;
+
+  const _count = COOKIES.get(newCookiesName);
   return _count == null || parseInt(_count) < number;
 };
 
-POPUP_BANNER.addCountOfShow = (number) => {
-  const _countFromCookies = COOKIES.get(COOKIES_NAME);
+
+POPUP_BANNER.addCountOfShow = (number, campaign) => {
+  campaign = campaign || null;
+  let newCookiesName = campaign? COOKIES_NAME + '_' + campaign : COOKIES_NAME;
+
+  const _countFromCookies = COOKIES.get(newCookiesName);
   const _count = _countFromCookies != null ? parseInt(_countFromCookies) + number : 1;
-  COOKIES.set(COOKIES_NAME, _count);
+  COOKIES.set(newCookiesName, _count);
+};
+
+
+POPUP_BANNER.showCount = (campaign) => {
+  campaign = campaign || null;
+  let newCookiesName = campaign? COOKIES_NAME + '_' + campaign : COOKIES_NAME;
+  
+  const _countFromCookies = COOKIES.get(newCookiesName);
+  return _countFromCookies? parseInt(_countFromCookies) : 0;
 };
 
 

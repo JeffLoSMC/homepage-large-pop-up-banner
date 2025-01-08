@@ -71,40 +71,67 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
 
   const randomDisplaySelect = () => {
     let result = Math.round(Math.random()); // randomly generated 0 to 1
-
     return result;
   };
 
+  const twoCampaignSelect = (campaign1, campaign2) => {
+    let showCount1 = POPUP_BANNER.showCount(campaign1);
+    let showCount2 = POPUP_BANNER.showCount(campaign2);
+
+    let campaignResult = null;
+
+    // if one banner showcount is higher, display the other banner
+    if(showCount1 < showCount2){
+      campaignResult = campaign1
+    } 
+    else if(showCount2 < showCount1){
+      campaignResult = campaign2
+    } 
+    else {  // when both showCount is equal, random select between two banners, ratio 50:50
+      campaignResult = randomDisplaySelect() == 0? campaign1 : campaign2;
+    }
+
+    return campaignResult;
+  }
+
+
   OVERLAYBANNER.initBanner = (target) => {
     const _target = target || document.getElementById('site-preloader');
+
     const _callback = () => {
-      if(randomDisplaySelect() == 0){
+      let selectedCampaign = twoCampaignSelect(CAMPAIGN.CNY2025ANDROID, CAMPAIGN.CNY2025APPLE);
+      
+      if(selectedCampaign == CAMPAIGN.CNY2025ANDROID){
         cny2025android({
           rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025ANDROID),
         });
-      } else {
+      }
+      if(selectedCampaign == CAMPAIGN.CNY2025APPLE){
         cny2025apple({
           rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025APPLE),
         });
       }
-
-      // defaultPopup({
-      //   rendered: () => POPUP_BANNER.addCountOfShow(1),
-      // });
     };
-    return _callback();
 
-      // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
-      //   const _target = target || document.getElementById('site-preloader');
-      //   const _callback = () => {
-      //     christmas({
-      //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-      //     });
-      //   };
-      //   return _callback();
-		  // } else {
-      //   return;
-      // }
+
+    // const _callback = () => {
+    //   defaultPopup({
+    //     rendered: () => POPUP_BANNER.addCountOfShow(1),
+    //   });
+    // };
+
+    // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
+    //   const _target = target || document.getElementById('site-preloader');
+    //   const _callback = () => {
+    //     christmas({
+    //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+    //     });
+    //   };
+    //   return _callback();
+		// } else {
+    //   return;
+    // }  
+    return _callback();
   };
   
 
