@@ -99,8 +99,10 @@ $white: #ffffff
         @include desktop
             height: 470px
         .modal-body
-            height: calc(100% - 30px)
+            height: calc(100% - 34px)
             padding: 0px
+            @include desktop
+                height: calc(100% - 30px)
         .modal-header
             position: relative
             padding: 20px 5px 15px
@@ -109,7 +111,7 @@ $white: #ffffff
                 padding: 15px
         &.bannerBackground
             background-repeat: no-repeat
-            background-color: #B0DBFD
+            background-color: #FFFFFF
             max-height: none
             @include ipx
                 background-size: 110% auto
@@ -335,6 +337,58 @@ $white: #ffffff
                 max-width: 143px
                 @include desktop
                     max-width: 335 * 0.5px
+    #importantNotice_BG,
+    #importantNotice_BG_M
+      &.modal-content--popup-banner
+        height: 331px
+        &.bannerBackground
+            width: 100%
+            max-width: 100%
+            z-index: 1100
+            @include desktop
+                width: 1024px
+        .bannerBody
+            height: 100%
+        .homePopup
+            display: flex
+            align-items: center
+            margin: 0px 40px
+            padding-bottom: 35px
+            @include desktop
+                margin: 0px 80px
+                padding-bottom: 30px
+        .noticeSectionBox
+            width: 100%
+            display: flex
+            height: max-content
+            max-height: 100%
+            overflow-y: scroll
+            scrollbar-width: auto
+            @media screen and (min-width: 480px)
+                scrollbar-width: none
+            .noticeSection
+                width: 100%
+                display: flex
+                flex-wrap: wrap
+                gap: 20px
+                .noticeSection__title
+                    width: 100%
+                    display: inline-block
+                    color: $red
+                    p
+                        font-size: 18px
+                        line-height: 26px
+                        font-weight: 700
+                .noticeSection__desc
+                    width: 100%
+                    display: inline-block
+                    p
+                        font-size: 14px
+                        line-height: 22px
+                        font-weight: 400
+                        @include desktop
+                            font-size: 16px
+                            line-height: 24px
     #default_BG      
       .bannerBackground
         min-width: 768px
@@ -448,3 +502,14 @@ $white: #ffffff
       #fiveG19030_BG
         .homePopup__text
           padding-top: 20px
+    #bannerModal
+        #importantNotice_BG,
+        #importantNotice_BG_M
+        &.modal-content--popup-banner
+            .noticeSection
+                .noticeSection__title
+                    p
+                        font-weight: 500
+                .noticeSection__desc
+                    p
+                        font-weight: 300

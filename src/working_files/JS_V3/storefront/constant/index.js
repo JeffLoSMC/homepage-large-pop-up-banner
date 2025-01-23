@@ -26,6 +26,7 @@ const CAMPAIGN = {
   XMAS2024APPLE: 'xmas2024apple',
   CNY2025ANDROID: 'cny2025android',
   CNY2025APPLE: 'cny2025apple',
+  IMPORTANTNOTICE: 'importantNotice'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

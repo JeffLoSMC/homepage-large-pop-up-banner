@@ -13,6 +13,7 @@ import general from './components/banner/general'
 import defaultPopup from './components/banner/defaultPopup';
 import cny2025android from './components/banner/cny2025android';
 import cny2025apple from './components/banner/cny2025apple';
+import importantNotice from './components/banner/importantNotice';
 import POPUP_BANNER from './components/banner';
 
 if (typeof OVERLAYBANNER === 'undefined') {
@@ -95,21 +96,26 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   }
 
 
-  OVERLAYBANNER.initBanner = (target) => {
+  OVERLAYBANNER.initBanner = (target, specific) => {
     const _target = target || document.getElementById('site-preloader');
 
     const _callback = () => {
-      let selectedCampaign = twoCampaignSelect(CAMPAIGN.CNY2025ANDROID, CAMPAIGN.CNY2025APPLE);
-      
-      if(selectedCampaign == CAMPAIGN.CNY2025ANDROID){
-        cny2025android({
-          rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025ANDROID),
+      if(specific == "cnyWorkingHour"){
+        importantNotice({
+          rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.IMPORTANTNOTICE),
         });
-      }
-      if(selectedCampaign == CAMPAIGN.CNY2025APPLE){
-        cny2025apple({
-          rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025APPLE),
-        });
+      }else{
+        let selectedCampaign = twoCampaignSelect(CAMPAIGN.CNY2025ANDROID, CAMPAIGN.CNY2025APPLE);
+        if(selectedCampaign == CAMPAIGN.CNY2025ANDROID){
+          cny2025android({
+            rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025ANDROID),
+          });
+        }
+        if(selectedCampaign == CAMPAIGN.CNY2025APPLE){
+          cny2025apple({
+            rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025APPLE),
+          });
+        }
       }
     };
 
