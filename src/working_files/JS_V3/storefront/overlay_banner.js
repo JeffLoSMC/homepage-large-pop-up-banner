@@ -11,8 +11,8 @@ import COOKIES from './cookie';
 import MODAL from './modal';
 import general from './components/banner/general'
 import defaultPopup from './components/banner/defaultPopup';
-import cny2025android from './components/banner/cny2025android';
-import cny2025apple from './components/banner/cny2025apple';
+import campaignPopupFirst from './components/banner/campaignPopupFirst';
+import campaignPopupSecond from './components/banner/campaignPopupSecond';
 import importantNotice from './components/banner/importantNotice';
 import POPUP_BANNER from './components/banner';
 
@@ -105,15 +105,15 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
           rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.IMPORTANTNOTICE),
         });
       }else{
-        let selectedCampaign = twoCampaignSelect(CAMPAIGN.CNY2025ANDROID, CAMPAIGN.CNY2025APPLE);
-        if(selectedCampaign == CAMPAIGN.CNY2025ANDROID){
-          cny2025android({
-            rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025ANDROID),
+        let selectedCampaign = twoCampaignSelect(CAMPAIGN.VDAY2025APPLE, CAMPAIGN.VDAY2025ANDROID);
+        if(selectedCampaign == CAMPAIGN.VDAY2025APPLE){
+          campaignPopupFirst({
+            rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.VDAY2025APPLE),
           });
         }
-        if(selectedCampaign == CAMPAIGN.CNY2025APPLE){
-          cny2025apple({
-            rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.CNY2025APPLE),
+        if(selectedCampaign == CAMPAIGN.VDAY2025ANDROID){
+          campaignPopupSecond({
+            rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.VDAY2025ANDROID),
           });
         }
       }

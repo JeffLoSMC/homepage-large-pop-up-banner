@@ -10,7 +10,7 @@
 ## Getting start
 - npm install
 - npm run dev
-- access *http://localhost:3000/?env=http://localhost:3000/<SMS ID>/&banner=initBanner* from browser
+- access http://localhost:3000/?env=45984/ (for example dev under SMS#45984)
 
 ## Deployment
 - *dist/<SMS ID>* contains all files for deployment
