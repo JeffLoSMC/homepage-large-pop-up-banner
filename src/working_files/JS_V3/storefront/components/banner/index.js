@@ -74,16 +74,16 @@ POPUP_BANNER.render = (options) => {
   //OSO-256
   if (campaign == CAMPAIGN.VDAY2025APPLE) {
     if (UTIL.locale() == 'EN') {
-      ga('send', 'event', 'OS_pop_en', 'Impression', '202502_Apple_Vday_impression');
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202502_Apple_Vdayv2_impression');
     } else {
-      ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_Apple_Vday_impression');
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_Apple_Vdayv2_impression');
     }
   }
   if (campaign == CAMPAIGN.VDAY2025ANDROID) {
     if (UTIL.locale() == 'EN') {
-      ga('send', 'event', 'OS_pop_en', 'Impression', '202502_Android_Vday_impression');
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202502_Android_Vdayv2_impression');
     } else {
-      ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_Android_Vday_impression');
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_Android_Vdayv2_impression');
     }
   }
   jQuery('body').append($modal);
@@ -175,16 +175,16 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
 
     if (campaign == CAMPAIGN.VDAY2025APPLE) {
       if (UTIL.locale() == 'EN') {
-        ga('send', 'event', 'OS_pop_en', 'Click', '202502_Apple_Vday_click');
+        ga('send', 'event', 'OS_pop_en', 'Click', '202502_Apple_Vdayv2_click');
       } else {
-        ga('send', 'event', 'OS_pop_tc', 'Click', '202502_Apple_Vday_click');
+        ga('send', 'event', 'OS_pop_tc', 'Click', '202502_Apple_Vdayv2_click');
       }
     }
     if (campaign == CAMPAIGN.VDAY2025ANDROID) {
       if (UTIL.locale() == 'EN') {
-        ga('send', 'event', 'OS_pop_en', 'Click', '202502_Android_Vday_click');
+        ga('send', 'event', 'OS_pop_en', 'Click', '202502_Android_Vdayv2_click');
       } else {
-        ga('send', 'event', 'OS_pop_tc', 'Click', '202502_Android_Vday_click');
+        ga('send', 'event', 'OS_pop_tc', 'Click', '202502_Android_Vdayv2_click');
       }
     }
   });
