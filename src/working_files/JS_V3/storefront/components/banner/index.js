@@ -70,7 +70,6 @@ POPUP_BANNER.render = (options) => {
       ga('send', 'event', 'OS_pop_tc', 'Impression', '202501_applepop_CNY_IM');
     }
   }
-
   //OSO-256
   if (campaign == CAMPAIGN.VDAY2025APPLE) {
     if (UTIL.locale() == 'EN') {
@@ -84,6 +83,14 @@ POPUP_BANNER.render = (options) => {
       ga('send', 'event', 'OS_pop_en', 'Impression', '202502_Android_Vdayv2_impression');
     } else {
       ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_Android_Vdayv2_impression');
+    }
+  }
+  //OSO-270
+  if (campaign == CAMPAIGN.S25SERIES2025) {
+    if (UTIL.locale() == 'EN') {
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202502_S25coupon_impression');
+    } else {
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_S25coupon_impression');
     }
   }
   jQuery('body').append($modal);
@@ -185,6 +192,13 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
         ga('send', 'event', 'OS_pop_en', 'Click', '202502_Android_Vdayv2_click');
       } else {
         ga('send', 'event', 'OS_pop_tc', 'Click', '202502_Android_Vdayv2_click');
+      }
+    }
+    if (campaign == CAMPAIGN.S25SERIES2025) {
+      if (UTIL.locale() == 'EN') {
+        ga('send', 'event', 'OS_pop_en', 'Click', '202502_S25coupon_click');
+      } else {
+        ga('send', 'event', 'OS_pop_tc', 'Click', '202502_S25coupon_click');
       }
     }
   });

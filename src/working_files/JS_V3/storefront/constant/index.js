@@ -28,7 +28,8 @@ const CAMPAIGN = {
   CNY2025APPLE: 'cny2025apple',
   IMPORTANTNOTICE: 'importantNotice',
   VDAY2025APPLE: 'vday2025apple',
-  VDAY2025ANDROID: 'vday2025android'
+  VDAY2025ANDROID: 'vday2025android',
+  S25SERIES2025: 's25series2025'
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

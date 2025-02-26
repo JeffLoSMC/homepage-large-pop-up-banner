@@ -15,18 +15,18 @@ import {
   CONTENT.EN = {};
   CONTENT.IMAGE = {};
 
-  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/christmas_2024.jsp?itm_campaign=202412-xmaxpop2&itm_source=itm&itm_medium=banner&itm_content=xmaspop-tc&itm_ga=os";
-  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/christmas_2024.jsp?itm_campaign=202412-xmaxpop2&itm_source=itm&itm_medium=banner&itm_content=xmaspop-en&itm_ga=os";
+  CONTENT.TC.DEFAULT_PLAN_URL = "https://www.smartone.com/SmarTone-CARE/intro/tchinese/index.html?redirect=exclusive&utm_campaign=202502-s25-coupon&utm_source=smartone-care&utm_medium=pop-up-banner&utm_content=s25-coupon&utm_ga=os";
+  CONTENT.EN.DEFAULT_PLAN_URL = "https://www.smartone.com/SmarTone-CARE/intro/english/index.html?redirect=exclusive&utm_campaign=202502-s25-coupon&utm_source=smartone-care&utm_medium=pop-up-banner&utm_content=s25-coupon&utm_ga=os";
   
-  CONTENT.TC.BG = 'IMG_V4/popup_banner/Christmas_popup_banner_2024/Christmas_popbanner_d_tc.gif';
-  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/Christmas_popup_banner_2024/Christmas_popbanner_m_tc.gif';
+  CONTENT.TC.BG = 'IMG_V4/popup_banner/s25_series/s25series_os_popup_banner_tc.gif';
+  CONTENT.TC.BG_M = 'IMG_V4/popup_banner/s25_series/s25series_os_popup_banner_mob_tc.gif';
   
-  CONTENT.EN.BG = 'IMG_V4/popup_banner/Christmas_popup_banner_2024/Christmas_popbanner_d_en.gif';
-  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/Christmas_popup_banner_2024/Christmas_popbanner_m_en.gif';
+  CONTENT.EN.BG = 'IMG_V4/popup_banner/s25_series/s25series_os_popup_banner_en.gif';
+  CONTENT.EN.BG_M = 'IMG_V4/popup_banner/s25_series/s25series_os_popup_banner_mob_en.gif';
   
   const defaultPopup = POPUP_BANNER.init({
     content: CONTENT,
-    campaign: CAMPAIGN.XMAS2024APPLE,
+    campaign: CAMPAIGN.S25SERIES2025,
     body: ` <a href="${UTIL.trans({
       tc: CONTENT.TC.DEFAULT_PLAN_URL,
       en: CONTENT.EN.DEFAULT_PLAN_URL,
