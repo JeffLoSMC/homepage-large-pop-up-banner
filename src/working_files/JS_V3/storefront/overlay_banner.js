@@ -123,7 +123,7 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
     //if there is ONLY ONE version for the popup banner
     const _callback = () => {
       defaultPopup({
-        rendered: () => POPUP_BANNER.addCountOfShow(1),
+        rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.S25SERIES2025),
       });
     };
     
