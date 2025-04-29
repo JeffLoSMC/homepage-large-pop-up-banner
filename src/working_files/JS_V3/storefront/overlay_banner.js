@@ -96,52 +96,52 @@ OVERLAYBANNER.HOMEPAGE_LARGE_POPUP_BANNER = {
   }
 
 
-  OVERLAYBANNER.initBanner = (target, specific) => {
-    const _target = target || document.getElementById('site-preloader');
+  // OVERLAYBANNER.initBanner = (target, specific) => {
+  //   const _target = target || document.getElementById('site-preloader');
 
-    // //two banners
-    // const _callback = () => {
-    //   if(specific == "cnyWorkingHour"){
-    //     importantNotice({
-    //       rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.IMPORTANTNOTICE),
-    //     });
-    //   }else{
-    //     let selectedCampaign = twoCampaignSelect(CAMPAIGN.VDAY2025APPLE, CAMPAIGN.VDAY2025ANDROID);
-    //     if(selectedCampaign == CAMPAIGN.VDAY2025APPLE){
-    //       campaignPopupFirst({
-    //         rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.VDAY2025APPLE),
-    //       });
-    //     }
-    //     if(selectedCampaign == CAMPAIGN.VDAY2025ANDROID){
-    //       campaignPopupSecond({
-    //         rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.VDAY2025ANDROID),
-    //       });
-    //     }
-    //   }
-    // };
+  //   // //two banners
+  //   // const _callback = () => {
+  //   //   if(specific == "cnyWorkingHour"){
+  //   //     importantNotice({
+  //   //       rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.IMPORTANTNOTICE),
+  //   //     });
+  //   //   }else{
+  //   //     let selectedCampaign = twoCampaignSelect(CAMPAIGN.VDAY2025APPLE, CAMPAIGN.VDAY2025ANDROID);
+  //   //     if(selectedCampaign == CAMPAIGN.VDAY2025APPLE){
+  //   //       campaignPopupFirst({
+  //   //         rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.VDAY2025APPLE),
+  //   //       });
+  //   //     }
+  //   //     if(selectedCampaign == CAMPAIGN.VDAY2025ANDROID){
+  //   //       campaignPopupSecond({
+  //   //         rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.VDAY2025ANDROID),
+  //   //       });
+  //   //     }
+  //   //   }
+  //   // };
 
-    //if there is ONLY ONE version for the popup banner
-    const _callback = () => {
-      defaultPopup({
-        rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.S25SERIES2025),
-      });
-    };
+  //   //if there is ONLY ONE version for the popup banner
+  //   const _callback = () => {
+  //     defaultPopup({
+  //       rendered: () => POPUP_BANNER.addCountOfShow(1, CAMPAIGN.S25SERIES2025),
+  //     });
+  //   };
     
-    return _callback();
+  //   return _callback();
 
 
-    // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
-    //   const _target = target || document.getElementById('site-preloader');
-    //   const _callback = () => {
-    //     christmas({
-    //       rendered: () => POPUP_BANNER.addCountOfShow(1),
-    //     });
-    //   };
-    //   return _callback();
-		// } else {
-    //   return;
-    // }  
-  };
+  //   // if (POPUP_BANNER.isNotReachCountOfShow(3) || ASSIST.isDev) {
+  //   //   const _target = target || document.getElementById('site-preloader');
+  //   //   const _callback = () => {
+  //   //     christmas({
+  //   //       rendered: () => POPUP_BANNER.addCountOfShow(1),
+  //   //     });
+  //   //   };
+  //   //   return _callback();
+	// 	// } else {
+  //   //   return;
+  //   // }  
+  // };
   
 
   // '?banner={{initBannerOn}} e.g.?overlayBanner=mnp-offer-check'
