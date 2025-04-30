@@ -23,43 +23,47 @@ import {
     content: CONTENT,
     campaign: CAMPAIGN.MOTHERDAY2025,
     body: `
-      <div
-        id="animation_container"
-        style="
-          background-color: rgba(255, 255, 255, 1);
-          width: 100%;
-          height: calc(100% + 30px);
-          position: absolute;
-          top: -30px;
-        "
-      >
-        <canvas
-          id="canvas"
-          style="
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            display: block;
-            background-color: rgba(255, 255, 255, 1);
-          "
-        ></canvas>
+      <a href="${UTIL.trans({
+          tc: CONTENT.TC.DEFAULT_PLAN_URL,
+          en: CONTENT.EN.DEFAULT_PLAN_URL,
+      })}" class="bannerBody">
         <div
-          id="dom_overlay_container"
+          id="animation_container"
           style="
-            pointer-events: none;
-            overflow: hidden;
+            background-color: rgba(255, 255, 255, 1);
             width: 100%;
-            height: 100%;
+            height: calc(100% + 30px);
             position: absolute;
-            left: 0px;
-            top: 0px;
-            display: block;
+            top: -30px;
           "
-        ></div>
-      </div>
-
-      <div class="homePopup">
-      </div>
+        >
+          <canvas
+            id="canvas"
+            style="
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              display: block;
+              background-color: rgba(255, 255, 255, 1);
+            "
+          ></canvas>
+          <div
+            id="dom_overlay_container"
+            style="
+              pointer-events: none;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              display: block;
+            "
+          ></div>
+        </div>
+        <div class="homePopup">
+        </div>
+      </a>
     `,
   });
   

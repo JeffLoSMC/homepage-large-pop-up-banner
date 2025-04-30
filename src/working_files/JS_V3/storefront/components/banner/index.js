@@ -102,15 +102,16 @@ POPUP_BANNER.render = (options) => {
     }
   }
   jQuery('body').append($modal);
-  
-  //if canvas exists in body
-  if (jQuery('#animation_container').length > 0) {
-    console.log('canvas exists');
-  }
 
   POPUP_BANNER.registerEvent($modal, campaign, content);
   setTimeout(() => {
     jQuery('#bannerModal').fadeIn(500);
+
+    //if animation canvas exists in banner body
+    if (jQuery('#animation_container').length > 0) {
+      console.log('canvas exists');
+      init();
+    }
   }, _delay);
 };
 
