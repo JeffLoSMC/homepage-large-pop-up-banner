@@ -15,8 +15,8 @@ import {
   CONTENT.EN = {};
   CONTENT.IMAGE = {};
 
-  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/Vday_2025.jsp?itm_campaign=202502-vdaypop-v1v2&itm_source=itm&itm_medium=pop-up-banner&itm_content=v1v2-apple&itm_ga=os";
-  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/Vday_2025.jsp?itm_campaign=202502-vdaypop-v1v2&itm_source=itm&itm_medium=pop-up-banner&itm_content=v1v2-apple&itm_ga=os";
+  CONTENT.TC.DEFAULT_PLAN_URL = "/tc/storefront/Mothers_day_2025.jsp?itm_campaign=202504-mothers-day-os-popup&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=tc&itm_ga=os";
+  CONTENT.EN.DEFAULT_PLAN_URL = "/en/storefront/Mothers_day_2025.jsp?itm_campaign=202504-mothers-day-os-popup&itm_source=smartone-onlinestore&itm_medium=banner&itm_content=en&itm_ga=os";
   
   
   const motherday2025 = POPUP_BANNER.init({
