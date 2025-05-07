@@ -101,6 +101,15 @@ POPUP_BANNER.render = (options) => {
       ga('send', 'event', 'OS_pop_tc', 'Impression', '202502_S25coupon_g_impression');
     }
   }
+  //OSO-294
+  if (campaign == CAMPAIGN.MOTHERDAY2025) {
+    if (UTIL.locale() == 'EN') {
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202507_mothers_day_impression');
+    } else {
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202507_mothers_day_impression');
+    }
+  }
+
   jQuery('body').append($modal);
 
   POPUP_BANNER.registerEvent($modal, campaign, content);
@@ -223,6 +232,14 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
         ga('send', 'event', 'OS_pop_tc', 'Click', '202502_S25coupon_g_click');
       }
     }
+    if (campaign == CAMPAIGN.MOTHERDAY2025) {
+      if (UTIL.locale() == 'EN') {
+        ga('send', 'event', 'OS_pop_en', 'Click', '202507_mothers_day_click');
+      } else {
+        ga('send', 'event', 'OS_pop_tc', 'Click', '202507_mothers_day_click');
+      }
+    }
+
   });
   window.onresize = function () {
     const _backgroundSet = {
