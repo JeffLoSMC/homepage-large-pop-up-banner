@@ -31,6 +31,7 @@ const CAMPAIGN = {
   VDAY2025ANDROID: 'vday2025android',
   S25SERIES2025: 's25series2025',
   MOTHERDAY2025: 'motherday2025',
+  FATHERDAY2025: 'fatherday2025',
 };
 
 export { LOCALE_EN, LOCALE_TC, COOKIES_NAME, CAMPAIGN };

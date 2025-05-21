@@ -109,6 +109,14 @@ POPUP_BANNER.render = (options) => {
       ga('send', 'event', 'OS_pop_tc', 'Impression', '202507_mothers_day_impression');
     }
   }
+  //OSO-306
+  if (campaign == CAMPAIGN.FATHERDAY2025) {
+    if (UTIL.locale() == 'EN') {
+      ga('send', 'event', 'OS_pop_en', 'Impression', '202520_fathers_day_impression');
+    } else {
+      ga('send', 'event', 'OS_pop_tc', 'Impression', '202520_fathers_day_impression');
+    }
+  }
 
   jQuery('body').append($modal);
 
@@ -237,6 +245,13 @@ POPUP_BANNER.registerEvent = ($modal, campaign, content) => {
         ga('send', 'event', 'OS_pop_en', 'Click', '202507_mothers_day_click');
       } else {
         ga('send', 'event', 'OS_pop_tc', 'Click', '202507_mothers_day_click');
+      }
+    }
+    if (campaign == CAMPAIGN.FATHERDAY2025) {
+      if (UTIL.locale() == 'EN') {
+        ga('send', 'event', 'OS_pop_en', 'Click', '2025020_fathers_day_click');
+      } else {
+        ga('send', 'event', 'OS_pop_tc', 'Click', '2025020_fathers_day_click');
       }
     }
 
